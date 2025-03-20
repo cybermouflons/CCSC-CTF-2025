@@ -1,0 +1,2 @@
+# CCSC-CTF-2025
+CCSC 2025 Challenges
