@@ -1,0 +1,28 @@
+name: "zer0cool"
+author: "zer0heir"
+category: pwn
+
+description: |
+  It's not always ptmalloc...
+
+value: 500
+type: dynamic_docker
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  redirect_type: direct
+  compose_stack: !filecontents docker-compose.yml
+
+flags:
+  - ECSC{GenZ_GenA_Go_Watch_Hackers_the_Movie}
+
+tags:
+  - pwn
+  - easy
+
+files:
+  - "public/zer0cool.tar.gz"
+
+state: visible
+version: "0.1"

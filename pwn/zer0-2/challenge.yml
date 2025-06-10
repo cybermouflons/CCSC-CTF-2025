@@ -1,0 +1,28 @@
+name: "zer0-2"
+author: "zer0heir"
+category: pwn
+
+description: |
+  It's not always ptmalloc... And you don't always have free wins()
+
+value: 500
+type: dynamic_docker
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  redirect_type: direct
+  compose_stack: !filecontents docker-compose.yml
+
+flags:
+  - ECSC{The_r3turn_0f_...........................................}
+
+tags:
+  - pwn
+  - medium
+
+files:
+  - "public/zer0-2.tar.gz"
+
+state: visible
+version: "0.1"

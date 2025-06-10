@@ -1,0 +1,28 @@
+name: "shellcode"
+author: "s3nn"
+category: pwn
+
+description: |
+  No more RWX
+
+value: 500
+type: dynamic_docker
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  redirect_type: direct
+  compose_stack: !filecontents docker-compose.yml
+
+flags:
+  - ECSC{sh3llcode_ROPPING_ftw_TTTTTTTT}
+
+tags:
+  - pwn
+  - medium
+
+files:
+  - "public/shellcode.tar.gz"
+
+state: visible
+version: "0.1"
