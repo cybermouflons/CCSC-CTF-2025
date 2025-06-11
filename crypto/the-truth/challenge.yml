@@ -1,0 +1,22 @@
+name: "The Truth"
+author: "GramThanos"
+category: Crypto
+description: "Dear nano-community,\n\nI found it! I uncovered the truth!\nYou can find my encrypted message attached.\nUse our substitution table to decript it!\n\n Best regards,\nThanos\n\n\nAuthor: GramThanos"
+
+value: 50
+type: standard
+
+flags:
+    - CTFLIB{juST_4n_ex4mpl3_simpl3_flag_string}
+
+topics:
+    - Frequency Analysis
+
+tags:
+    - Crypto
+
+files:
+    - dist/crypto-the-truth.zip
+
+state: hidden
+version: "0.1"

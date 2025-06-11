@@ -20,7 +20,7 @@ Although some of the challenges may run as is, it is recommended that you have d
 
 | Name | Author |
 | ---- | ------ |
-| abc | xyz |
+| The Truth | [GramThanos](https://github.com/GramThanos) |
 
 
 
