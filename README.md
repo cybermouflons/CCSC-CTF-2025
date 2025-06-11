@@ -62,3 +62,4 @@ Although some of the challenges may run as is, it is recommended that you have d
 | ---- | --------- |
 | Cheesy Web | [deltaclock](https://github.com/deltaclock) & [GramThanos](https://github.com/GramThanos) |
 | Memes | [GramThanos](https://github.com/GramThanos) |
+| Remote Control | [GramThanos](https://github.com/GramThanos) |
