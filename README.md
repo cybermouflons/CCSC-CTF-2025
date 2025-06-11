@@ -58,6 +58,6 @@ Although some of the challenges may run as is, it is recommended that you have d
 
 ### web
 
-| Name | Author |
-| ---- | ------ |
-| abc | xyz |
+| Name | Author(s) |
+| ---- | --------- |
+| Cheesy Web | [deltaclock](https://github.com/deltaclock) & [GramThanos](https://github.com/GramThanos) |

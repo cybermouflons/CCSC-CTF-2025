@@ -1,0 +1,29 @@
+name: "Cheesy Web"
+author: "deltaclock & GramThanos"
+category: Web
+description: "🧀\n\n\nAuthor: deltaclock & GramThanos"
+
+value: 50
+type: docker
+extra:
+    docker_image: challenge/web:cheesy-web
+
+deploy:
+    docker_challenges: dist/docker-challenge.tar
+
+flags:
+    - ECSC{https://x.com/pilvar222/status/1782593915192795204}
+
+topics:
+    - PHP
+    - PHP Headers Remove
+    - Closed Shadow DOM
+
+tags:
+    - web
+
+files:
+    #- no code
+
+state: hidden
+version: "0.1"
