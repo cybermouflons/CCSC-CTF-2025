@@ -1,0 +1,39 @@
+name: "pwnb0t"
+category: pwn
+description: ""
+
+author: "Mike Takaronis <mtakaronis@ssl-unipi.gr>"
+homepage: "https://ssl.ds.unipi.gr/"
+
+type: docker-dynamic
+value: 500
+extra:
+    initial: 500
+    minimum: 100
+    decay: 20
+    docker_image: ctf-pwnbot/pwn:pwnbot
+
+deploy:
+    docker_challenges: dist/docker-challenge.tar
+
+flags:
+    - FLAG{Y0ur_d0ubbl3_fr33_fu_1s_str0ng_f0r_3xpl01t4t1on}
+
+topics:
+    - 
+
+tags:
+    - medium
+    - pwn
+
+files:
+    - dist/pwnbot.zip
+
+#hints:
+#    - {
+#        content: "No hints.",
+#        cost: 0
+#    }
+
+state: hidden
+version: "0.1"

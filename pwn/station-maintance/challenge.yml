@@ -1,0 +1,39 @@
+name: "Station Maintenace"
+category: pwn
+description: "Maintain the station using our standard maintenance app. A recent system patch has locked a flag within the station's database. Access the app, bypass the security measures, and retrieve the flag before the system fully reboots."
+
+author: "Mike Takaronis <mtakaronis@ssl-unipi.gr>"
+homepage: "https://ssl.ds.unipi.gr/"
+
+type: docker-dynamic
+value: 500
+extra:
+    initial: 500
+    minimum: 100
+    decay: 20
+    docker_image: ctf-quals/pwn:station-maintenace
+
+deploy:
+    docker_challenges: dist/docker-challenge.tar
+
+flags:
+    - FLAG{sp4c3_syst3ms_n3v3r_w3r3_s4f3r}
+
+topics:
+    - 
+
+tags:
+    - easy
+    - pwn
+
+files:
+    - dist/station-maintenace.zip
+
+#hints:
+#    - {
+#        content: "No hints.",
+#        cost: 0
+#    }
+
+state: hidden
+version: "0.1"

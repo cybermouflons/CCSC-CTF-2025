@@ -1,0 +1,18 @@
+default: print
+	-cd src/app && rm pwnb0t && rm -r glibc
+	cd src/app && cp ../build/pwnb0t . && cp -r ../build/glibc .
+	tar cvf dist/docker-challenge.tar -C src app Dockerfile
+	cd src/app && zip -r ../../dist/pwnbot.zip ./pwnb0t ./glibc/libc.so.6 ./glibc/ld.so.2
+	@echo Challenge compiled.
+print:
+	@echo Current Flag: $$(cat src/app/flag.txt)
+change: print changeflag clean default print
+changeflag:
+	$(shell bash -c 'read -p "New Flag: " flag; echo $$flag > src/app/flag.txt')
+	@echo Flag changed.
+clean:
+	-rm src/app/pwnb0t
+	-rm -r src/app/glibc
+	-rm -f dist/docker-challenge.tar
+	-rm -f dist/pwnb0t.zip
+	@echo Challenge cleaned.

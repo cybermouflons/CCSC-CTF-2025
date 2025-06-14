@@ -1,0 +1,39 @@
+name: "Log Recorder"
+category: pwn
+description: "Transmit your logs effortlessly with the Space Log Recorder using our cutting-edge space app."
+
+author: "Mike Takaronis <mtakaronis@ssl-unipi.gr>"
+homepage: "https://ssl.ds.unipi.gr/"
+
+type: docker-dynamic
+value: 500
+extra:
+    initial: 500
+    minimum: 100
+    decay: 20
+    docker_image: ctf-q/pwn:log-recorder
+
+deploy:
+    docker_challenges: dist/docker-challenge.tar
+
+flags:
+    - FLAG{r3c0rd1ng_sp4c3_m1ss1ons_sh0uld_b3_fun}
+
+topics:
+    - 
+
+tags:
+    - very easy
+    - pwn
+
+files:
+    - dist/log-recorder.zip
+
+#hints:
+#    - {
+#        content: "No hints.",
+#        cost: 0
+#    }
+
+state: hidden
+version: "0.1"
