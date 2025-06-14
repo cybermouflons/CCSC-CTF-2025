@@ -1,7 +1,7 @@
 # pwnb0t
 
 
-- Difficulty: Hard
+- Difficulty: Medium
 
 
 ## Steps
