@@ -7,8 +7,8 @@
 
 ## Description
 
-This pretty midi file looks like it sings something. 
-The acoustic grand piano is so soothing! 
+This pretty midi file looks like it sings something.
+The acoustic grand piano is so soothing!
 
 Note: The brackets "{" and "}" should be added by hand.
 
