@@ -5,7 +5,7 @@ description: "Maintain the station using our standard maintenance app. A recent 
 author: "Mike Takaronis <mtakaronis@ssl-unipi.gr>"
 homepage: "https://ssl.ds.unipi.gr/"
 
-type: docker-dynamic
+type: dynamic_docker
 value: 500
 extra:
   initial: 500
