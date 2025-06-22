@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  challenge:
+    image: ghcr.io/cybermouflons/ccsc2025/cheesy-web:latest
+    restart: always
+    ports:
+      - 1337:8000
+    build:
+      context: ./setup
+      dockerfile: Dockerfile
+      labels:
+        ctf.challenge.name: memes

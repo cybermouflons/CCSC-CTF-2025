@@ -1,15 +1,16 @@
 name: "Memes"
 author: "GramThanos"
-category: Web
+category: web
 description: "Time to generate some memes!\n\n\nAuthor: GramThanos"
 
-value: 50
-type: docker
+value: 500
+type: dynamic_docker
 extra:
-  docker_image: challenge/web:memes
-
-deploy:
-  docker_challenges: dist/docker-challenge.tar
+  initial: 500
+  minimum: 100
+  decay: 25
+  redirect_type: http
+  compose_stack: !filecontents docker-compose.yml
 
 flags:
   - ECSC{k33p-c4Lm_anD-l3T_tH3-s3Cur1Ty_t3Am-CrY}
@@ -21,7 +22,7 @@ tags:
   - web
 
 files:
-  - dist/web-memes.zip
+  - public/web-memes.zip
 
 state: hidden
 version: "0.1"

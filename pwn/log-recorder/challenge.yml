@@ -8,32 +8,21 @@ homepage: "https://ssl.ds.unipi.gr/"
 type: docker-dynamic
 value: 500
 extra:
-    initial: 500
-    minimum: 100
-    decay: 20
-    docker_image: ctf-q/pwn:log-recorder
-
-deploy:
-    docker_challenges: dist/docker-challenge.tar
+  initial: 500
+  minimum: 100
+  decay: 20
+  redirect_type: direct
+  compose_stack: !filecontents docker-compose.yml
 
 flags:
-    - FLAG{r3c0rd1ng_sp4c3_m1ss1ons_sh0uld_b3_fun}
-
-topics:
-    - 
+  - FLAG{r3c0rd1ng_sp4c3_m1ss1ons_sh0uld_b3_fun}
 
 tags:
-    - very easy
-    - pwn
+  - very easy
+  - pwn
 
 files:
-    - dist/log-recorder.zip
-
-#hints:
-#    - {
-#        content: "No hints.",
-#        cost: 0
-#    }
+  - public/log-recorder.zip
 
 state: hidden
 version: "0.1"

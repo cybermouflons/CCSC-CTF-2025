@@ -11,29 +11,18 @@ extra:
   initial: 500
   minimum: 100
   decay: 20
-  docker_image: ctf-quals/pwn:station-maintenace
-
-deploy:
-  docker_challenges: dist/docker-challenge.tar
+  redirect_type: direct
+  compose_stack: !filecontents docker-compose.yml
 
 flags:
   - FLAG{sp4c3_syst3ms_n3v3r_w3r3_s4f3r}
-
-topics:
-  -
 
 tags:
   - easy
   - pwn
 
 files:
-  - dist/station-maintenance.zip
-
-#hints:
-#    - {
-#        content: "No hints.",
-#        cost: 0
-#    }
+  - public/station-maintenance.zip
 
 state: hidden
 version: "0.1"

@@ -1,16 +1,16 @@
 default: print
-	tar cvf dist/docker-challenge.tar -C src html flag.txt Dockerfile
+	tar cvf public/docker-challenge.tar -C setup html flag.txt Dockerfile
 	@echo Challenge compiled.
 
 print:
-	@echo Current Flag: $$(cat src/flag.txt)
+	@echo Current Flag: $$(cat setup/flag.txt)
 
 change: print changeflag clean default print
 
 changeflag:
-	$(shell bash -c 'read -p "New Flag: " flag; echo $$flag > src/flag.txt')
+	$(shell bash -c 'read -p "New Flag: " flag; echo $$flag > setup/flag.txt')
 	@echo Flag changed.
 
 clean:
-	rm -f dist/docker-challenge.tar
+	rm -f public/docker-challenge.tar
 	@echo Challenge cleaned.

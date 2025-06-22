@@ -1,15 +1,16 @@
 name: "Remote Control"
 author: "GramThanos"
-category: Web
+category: web
 description: "We can now monitor our server securely.\n\n\nAuthor: GramThanos"
 
-value: 50
-type: docker
+value: 500
+type: dynamic_docker
 extra:
-  docker_image: challege/web:remote-control
-
-deploy:
-  docker_challenges: dist/docker-challenge.tar
+  initial: 500
+  minimum: 100
+  decay: 25
+  redirect_type: http
+  compose_stack: !filecontents docker-compose.yml
 
 flags:
   - ECSC{I_gOt_mA_F1Rt_z3r0-d4y}
@@ -21,7 +22,7 @@ tags:
   - web
 
 files:
-  - dist/web-remote-control.zip
+  - public/web-remote-control.zip
 
 state: hidden
 version: "0.1"

@@ -1,6 +1,6 @@
 default: print
-	tar cvf dist/docker-challenge.tar -C src app Dockerfile
-	cd src/app && zip -r - log-recorder --exclude='*flag*' > ../../dist/log-recorder.zip
+	tar cvf public/docker-challenge.tar -C src app Dockerfile
+	cd src/app && zip -r - log-recorder --exclude='*flag*' > ../../public/log-recorder.zip
 	@echo Challenge compiled.
 print:
 	@echo Current Flag: $$(cat src/app/flag.txt)
@@ -9,6 +9,6 @@ changeflag:
 	$(shell bash -c 'read -p "New Flag: " flag; echo $$flag > src/app/flag.txt')
 	@echo Flag changed.
 clean:
-	-rm -f dist/docker-challenge.tar
-	-rm -f dist/log-recorder.zip
+	-rm -f public/docker-challenge.tar
+	-rm -f public/log-recorder.zip
 	@echo Challenge cleaned.
