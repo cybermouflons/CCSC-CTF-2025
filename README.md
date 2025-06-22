@@ -16,19 +16,11 @@ Although some of the challenges may run as is, it is recommended that you have d
 ## Challenges
 
 
-### crypto
+### cypto
 
 | Name | Author |
 | ---- | ------ |
-| The Truth | [GramThanos](https://github.com/GramThanos) |
-
-
-
-### forensics
-
-| Name | Author |
-| ---- | ------ |
-| abc | xyz |
+| [The Truth](./crypto/the-truth) | [GramThanos](https://github.com/GramThanos) |
 
 
 
@@ -36,7 +28,7 @@ Although some of the challenges may run as is, it is recommended that you have d
 
 | Name | Author |
 | ---- | ------ |
-| abc | xyz |
+| [You've got a flag in me](./misc/you-ve-got-a-flag-in-me) | tratrafe2 |
 
 
 
@@ -44,22 +36,21 @@ Although some of the challenges may run as is, it is recommended that you have d
 
 | Name | Author |
 | ---- | ------ |
-| abc | xyz |
-
-
-
-### reverse
-
-| Name | Author |
-| ---- | ------ |
-| abc | xyz |
+| [Log Recorder](./pwn/log-recorder) | Mike Takaronis <mtakaronis@ssl-unipi.gr> |
+| [pwnb0t](./pwn/pwnb0t) | Mike Takaronis <mtakaronis@ssl-unipi.gr> |
+| [shellcode](./pwn/shellcode) | s3nn |
+| [Station Maintenace](./pwn/station-maintance) | Mike Takaronis <mtakaronis@ssl-unipi.gr> |
+| [zer0-2](./pwn/zer0-2) | zer0heir |
+| [zer0cool](./pwn/zer0cool) | zer0heir |
 
 
 
 ### web
 
-| Name | Author(s) |
-| ---- | --------- |
-| Cheesy Web | [deltaclock](https://github.com/deltaclock) & [GramThanos](https://github.com/GramThanos) |
-| Memes | [GramThanos](https://github.com/GramThanos) |
-| Remote Control | [GramThanos](https://github.com/GramThanos) |
+| Name | Author |
+| ---- | ------ |
+| [Cheesy Web](./web/cheesy-web) | deltaclock & GramThanos |
+| [Memes](./web/memes) | GramThanos |
+| [Remote Control](./web/remote-control) | GramThanos |
+
+
