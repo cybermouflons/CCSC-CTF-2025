@@ -8,26 +8,26 @@ homepage: "https://ssl.ds.unipi.gr/"
 type: docker-dynamic
 value: 500
 extra:
-    initial: 500
-    minimum: 100
-    decay: 20
-    docker_image: ctf-quals/pwn:station-maintenace
+  initial: 500
+  minimum: 100
+  decay: 20
+  docker_image: ctf-quals/pwn:station-maintenace
 
 deploy:
-    docker_challenges: dist/docker-challenge.tar
+  docker_challenges: dist/docker-challenge.tar
 
 flags:
-    - FLAG{sp4c3_syst3ms_n3v3r_w3r3_s4f3r}
+  - FLAG{sp4c3_syst3ms_n3v3r_w3r3_s4f3r}
 
 topics:
-    - 
+  -
 
 tags:
-    - easy
-    - pwn
+  - easy
+  - pwn
 
 files:
-    - dist/station-maintenace.zip
+  - dist/station-maintenance.zip
 
 #hints:
 #    - {
