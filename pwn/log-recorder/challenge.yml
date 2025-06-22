@@ -5,7 +5,7 @@ description: "Transmit your logs effortlessly with the Space Log Recorder using 
 author: "Mike Takaronis <mtakaronis@ssl-unipi.gr>"
 homepage: "https://ssl.ds.unipi.gr/"
 
-type: docker-dynamic
+type: dynamic_docker
 value: 500
 extra:
   initial: 500
