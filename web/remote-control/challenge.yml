@@ -6,22 +6,22 @@ description: "We can now monitor our server securely.\n\n\nAuthor: GramThanos"
 value: 50
 type: docker
 extra:
-    docker_image: challege/web:remote-control
+  docker_image: challege/web:remote-control
 
 deploy:
-    docker_challenges: dist/docker-challenge.tar
+  docker_challenges: dist/docker-challenge.tar
 
 flags:
-    - ECSC{I_gOt_mA_F1Rt_z3r0-d4y}
+  - ECSC{I_gOt_mA_F1Rt_z3r0-d4y}
 
 topics:
-    - Zero Day
+  - Zero Day
 
 tags:
-    - web
+  - web
 
 files:
-    - web-remote-control.zip
+  - dist/web-remote-control.zip
 
 state: hidden
 version: "0.1"

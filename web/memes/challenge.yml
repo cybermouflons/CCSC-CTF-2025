@@ -6,22 +6,22 @@ description: "Time to generate some memes!\n\n\nAuthor: GramThanos"
 value: 50
 type: docker
 extra:
-    docker_image: challenge/web:memes
+  docker_image: challenge/web:memes
 
 deploy:
-    docker_challenges: dist/docker-challenge.tar
+  docker_challenges: dist/docker-challenge.tar
 
 flags:
-    - ECSC{k33p-c4Lm_anD-l3T_tH3-s3Cur1Ty_t3Am-CrY}
+  - ECSC{k33p-c4Lm_anD-l3T_tH3-s3Cur1Ty_t3Am-CrY}
 
 topics:
-    - CVE-2023-38633
+  - CVE-2023-38633
 
 tags:
-    - web
+  - web
 
 files:
-    - web-memes.zip
+  - dist/web-memes.zip
 
 state: hidden
 version: "0.1"
