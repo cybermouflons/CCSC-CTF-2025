@@ -1,6 +1,6 @@
 name: Lint Challenges
 
-on: [workflow_call]  # allow this workflow to be called from other workflows
+on: [workflow_call] # allow this workflow to be called from other workflows
 
 jobs:
   run:
@@ -8,20 +8,56 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      
+
       - name: Install ctfcli
         run: |
           python -m pip install --upgrade pip
           pip install git+https://github.com/apogiatzis/ctfcli
-      
+
       - name: Challenge discovery
         id: challenge-discovery
         uses: ./.github/actions/discover-challenges
         with:
-          base-dir: '.'
+          base-dir: "."
 
       - name: Challenge list
         run: echo "${{ steps.challenge-discovery.outputs.dirs }}"
+
+      - name: Check path names
+        run: |
+          IFS=' ' read -r -a challenge_dirs <<< "${{ steps.challenge-discovery.outputs.dirs }}"
+          invalid_dirs=()
+
+          for challenge_dir in "${challenge_dirs[@]}"; do
+            # Extract just the directory name (basename)
+            dir_name=$(basename "$challenge_dir")
+
+            # Check if directory name matches kebab-case pattern
+            if [[ ! "$dir_name" =~ ^[a-z0-9]+(-[a-z0-9]+)*$ ]]; then
+              invalid_dirs+=("$challenge_dir")
+              echo "❌ Invalid directory name: $challenge_dir (not kebab-case)"
+            else
+              echo "✅ Valid directory name: $challenge_dir"
+            fi
+          done
+
+          # Fail the workflow if any invalid directories were found
+          if [ ${#invalid_dirs[@]} -gt 0 ]; then
+            echo ""
+            echo "Error: Found ${#invalid_dirs[@]} directory(ies) that don't follow kebab-case naming:"
+            printf '%s\n' "${invalid_dirs[@]}"
+            echo ""
+            echo "Directory names must:"
+            echo "- Use only lowercase letters (a-z)"
+            echo "- Use only numbers (0-9)"
+            echo "- Use hyphens (-) to separate words"
+            echo "- Not start or end with hyphens"
+            echo "- Not have consecutive hyphens"
+            exit 1
+          fi
+
+          echo ""
+          echo "✅ All ${#challenge_dirs[@]} challenge directories follow kebab-case naming convention"
 
       - name: Lint challenges
         run: |
