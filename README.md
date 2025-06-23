@@ -24,6 +24,14 @@ Although some of the challenges may run as is, it is recommended that you have d
 
 
 
+### forensics
+
+| Name | Author |
+| ---- | ------ |
+| [TVBox](./forensics/tvbox) | GramThanos |
+
+
+
 ### misc
 
 | Name | Author |
