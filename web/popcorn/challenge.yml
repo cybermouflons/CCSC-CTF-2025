@@ -1,0 +1,24 @@
+name: "Popcorn and Payloads"
+author: "[kallenosf](https://github.com/kallenosf)"
+category: web
+
+description: "Lights, camera, action! Can you see behind the scenes?\n\n<u>Note:</u> Admins/Moderators access the app at http://web-app/"
+
+value: 500
+type: dynamic_docker
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  redirect_type: http
+  compose_stack: !filecontents docker-compose.yml
+
+flags:
+  - ECSC{L1gHtS_C4meRa_D3c3pTi0n...I_Me4N_AC7ioN}
+
+tags:
+  - web
+  - easy
+
+state: hidden
+version: "0.1"

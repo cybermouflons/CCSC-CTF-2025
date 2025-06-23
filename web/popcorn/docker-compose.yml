@@ -1,0 +1,32 @@
+version: '3'
+services:
+  backend-service:
+    restart: always
+    build: ./setup/backend-service/
+    environment:
+      - flag=ECSC{L1gHtS_C4meRa_D3c3pTi0n...I_Me4N_AC7ioN}
+    networks:
+      - appnet
+  cache-service:
+    restart: always
+    build: ./setup/cache-service/
+    ports:
+      - 3000:80
+    networks:
+      appnet:
+        aliases:
+          - web-app
+  admin-bot:
+    restart: always
+    build: ./setup/admin-bot/
+    depends_on:
+      - cache-service
+    environment:
+      - ADMIN_USERNAME=admin
+      - ADMIN_PASSWORD=F6vF0Q3OXZbK5QZOSBlDzGU1LTn6ieol
+      - BASE_URL=http://web-app
+    networks:
+      - appnet
+
+networks:
+  appnet:
