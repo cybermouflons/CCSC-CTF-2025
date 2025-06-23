@@ -3,7 +3,7 @@
 
 **Category**: reverse
 
-**Author**: kallenosf
+**Author**: [kallenosf](https://github.com/kallenosf)
 
 ## Description
 

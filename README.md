@@ -57,7 +57,7 @@ Although some of the challenges may run as is, it is recommended that you have d
 
 | Name | Author |
 | ---- | ------ |
-| [Anti-tricks](./reverse/anti-tricks) | kallenosf |
+| [Anti-tricks](./reverse/anti-tricks) | [kallenosf](https://github.com/kallenosf) |
 
 
 
