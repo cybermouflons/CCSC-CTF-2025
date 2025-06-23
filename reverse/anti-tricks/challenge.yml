@@ -1,0 +1,27 @@
+name: "Anti-tricks"
+author: "kallenosf"
+category: reverse
+
+description: |
+  A tiny ELF binary with a big attitude. It really doesn't want you poking around.
+
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+
+flags:
+  - ECSC{bYP4551Ng_4Nti-r3V3rs1NG_7r1CKs}
+
+tags:
+  - reverse
+  - medium
+
+files:
+  - "public/chall
+
+state: hidden
+version: "0.1"
