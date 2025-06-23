@@ -60,10 +60,3 @@ Although some of the challenges may run as is, it is recommended that you have d
 | [Cheesy Web](./web/cheesy-web) | deltaclock & GramThanos |
 | [Memes](./web/memes) | GramThanos |
 | [Remote Control](./web/remote-control) | GramThanos |
-
-
-### forensics
-
-| Name | Author |
-| ---- | ------ |
-| [TVBox](./forensics/tvbox) | GramThanos |
