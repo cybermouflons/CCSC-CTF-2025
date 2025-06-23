@@ -47,6 +47,8 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 ...
 ```
 
+Ok... too many results. By searching online for a way to unpack the image, there are many tools, 2 of them are `rkImageMaker` and `afptool`.
+
 Lets download `rkImageMaker` to unpack the image:
 ```
 wget https://github.com/khadas/android_RKTools/raw/refs/heads/khadas-edge-nougat-v1.0/linux/Linux_Pack_Firmware/rockdev/rkImageMaker
@@ -248,3 +250,13 @@ Now we can update the code to get the flag:
 ```
 Awesome! ECSC{sUcC3s5fu1_DeV1C3_cLE4n_uP!} Good Job!
 ```
+
+## Device photos
+
+![](hardware-app.jpg)
+
+![](hardware-cached-files.jpg)
+
+![](hardware-system-info-dump.jpg)
+
+![](hardware-flag_txt.jpg)
