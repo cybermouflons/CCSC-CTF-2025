@@ -67,6 +67,7 @@ Although some of the challenges may run as is, it is recommended that you have d
 | ---- | ------ |
 | [Cheesy Web](./web/cheesy-web) | deltaclock & GramThanos |
 | [Memes](./web/memes) | GramThanos |
+| [Popcorn and Payloads](./web/popcorn) | [kallenosf](https://github.com/kallenosf) |
 | [Remote Control](./web/remote-control) | GramThanos |
 
 
