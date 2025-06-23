@@ -54,3 +54,8 @@ Although some of the challenges may run as is, it is recommended that you have d
 | [Remote Control](./web/remote-control) | GramThanos |
 
 
+### forensics
+
+| Name | Author |
+| ---- | ------ |
+| [TVBox](./forensics/tvbox) | GramThanos |
