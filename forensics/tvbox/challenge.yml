@@ -1,0 +1,27 @@
+name: "TVBox"
+author: "GramThanos"
+category: forensics
+description: "We bought a nice, cheap TV Box from an online marketplace. To make sure it was safe for use, I asked for the firmware from the seller in order to flash it and have a clean device.\nHe send me the firmware and from it I was also able to find the device info nad the manufacturer's website...\nHere is the sketchy part... the firmware from the seller is not the same with the firmware provided by the manufacturer... same name, different size...\nHave a look into the firmware provided by the seller. I am afraid he may installed some malware inside!\nFirmware provided by the seller: https://drive.google.com/file/d/12gy3mItfYi4w3Q9shI_VVEQw693fWsNZ/view?usp=sharing\n\n\nAuthor: GramThanos"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+
+flags:
+  - ECSC{sUcC3s5fu1_DeV1C3_cLE4n_uP!}
+
+topics:
+  - Firmware Unpacking
+  - Android System Image files
+  - Android Application Analysis
+  - JavaScript code Analysis
+  - Android Device Information
+
+tags:
+  - forensics
+
+state: hidden
+version: "0.1"
