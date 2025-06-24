@@ -43,6 +43,7 @@ Although some of the challenges may run as is, it is recommended that you have d
 
 | Name | Author |
 | ---- | ------ |
+| [CalculAItor](./misc/calculaitor) | GramThanos |
 | [You've got a flag in me](./misc/you-ve-got-a-flag-in-me) | tratrafe2 |
 
 
