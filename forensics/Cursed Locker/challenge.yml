@@ -1,0 +1,25 @@
+name: "Cursed Locker"
+author: "canopus"
+category: forensics
+description: "Oh noo, I was accidentaly locked outside my brand new Windows 11 Box! Please help me... \nDownload:  ``"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+
+flags:
+  - ECSC{1457e40e9d1220cc07397f92ce1cc47d}
+
+topics:
+  - Bitlocker
+  - Windows 11
+
+tags:
+  - easy
+  - forensics
+
+state: hidden
+version: "0.1"
