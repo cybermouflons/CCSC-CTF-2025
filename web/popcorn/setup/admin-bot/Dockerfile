@@ -1,4 +1,4 @@
-FROM node:20-slim
+FROM satantime/puppeteer-node:20-slim
 
 # Install Puppeteer dependencies
 RUN apt-get update && apt-get install -y \
