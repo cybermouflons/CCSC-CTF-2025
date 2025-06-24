@@ -1,6 +1,7 @@
 version: '3'
 services:
   backend-service:
+    image: ghcr.io/cybermouflons/ccsc2025/popcorn-backend-service:latest
     restart: always
     build: ./setup/backend-service/
     environment:
@@ -8,6 +9,7 @@ services:
     networks:
       - appnet
   cache-service:
+    image: ghcr.io/cybermouflons/ccsc2025/popcorn-cache-service:latest
     restart: always
     build: ./setup/cache-service/
     ports:
@@ -17,6 +19,7 @@ services:
         aliases:
           - web-app
   admin-bot:
+    image: ghcr.io/cybermouflons/ccsc2025/popcorn-admin-bot:latest
     restart: always
     build: ./setup/admin-bot/
     depends_on:
