@@ -1,0 +1,26 @@
+name: "Volatile Expert Pt. 5"
+author: "canopus"
+category: forensics
+description: "Forensics tough guy huh let's see how you do...\nPart 5: Consider the process with PID=1554 the flag is `ECSC{stack canary}` (`ECSC{0x00aa..}`) \nDownload: https://next.alpha-carinae.xyz/s/aqTwiX5ya9AsLWg `sha256:ce54b9989cf697210eaed2019162c7b9364694ce812cc35fbcf60d98e5bb66c1`"
+
+value: 100
+type: dynamic
+extra:
+  initial: 100
+  minimum: 50
+  decay: 5
+
+
+flags:
+  - ECSC{0x0046bf17f17316af}
+
+topics:
+  - Volatility
+
+tags:
+  - hard
+  - forensics
+  - volatility
+
+state: hidden
+version: "0.1"

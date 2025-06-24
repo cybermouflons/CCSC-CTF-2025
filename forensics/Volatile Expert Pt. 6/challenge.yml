@@ -1,0 +1,26 @@
+name: "Volatile Expert Pt. 6"
+author: "canopus"
+category: forensics
+description: "Forensics tough guy huh let's see how you do...\nPart 6: Consider the process with PID=972, the flag is `ECSC{sha1(task_struct)}` \nDownload: https://next.alpha-carinae.xyz/s/aqTwiX5ya9AsLWg `sha256:ce54b9989cf697210eaed2019162c7b9364694ce812cc35fbcf60d98e5bb66c1`"
+
+value: 100
+type: dynamic
+extra:
+  initial: 100
+  minimum: 50
+  decay: 5
+
+flags:
+  - ECSC{e21677d099a97ab06575248f5ad000bd7f0fbf10}
+
+topics:
+  - Volatility
+
+tags:
+  - hard
+  - bruh
+  - forensics
+  - volatility
+
+state: hidden
+version: "0.1"

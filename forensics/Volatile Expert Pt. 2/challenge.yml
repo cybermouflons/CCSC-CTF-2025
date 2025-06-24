@@ -1,0 +1,26 @@
+name: "Volatile Expert Pt. 2"
+author: "canopus"
+category: forensics
+description: "Forensics tough guy huh let's see how you do...\nPart 2: With the process with PID=1576 in mind, the flag is `ECSC{virtaddr:physaddr}` (of the process)\nDownload: https://next.alpha-carinae.xyz/s/aqTwiX5ya9AsLWg `sha256:ce54b9989cf697210eaed2019162c7b9364694ce812cc35fbcf60d98e5bb66c1`"
+
+value: 100
+type: dynamic
+extra:
+  initial: 100
+  minimum: 50
+  decay: 5
+
+
+flags:
+  - ECSC{0x99495097cc80:0x1097cc80}
+
+topics:
+  - Volatility
+
+tags:
+  - easy
+  - forensics
+  - volatility
+
+state: hidden
+version: "0.1"
