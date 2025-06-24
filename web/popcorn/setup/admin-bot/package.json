@@ -1,13 +1,12 @@
 {
-    "name": "admin-bot",
-    "version": "1.0.0",
-    "description": "Automated admin bot for testing the movie review site",
-    "main": "admin-bot.js",
-    "scripts": {
-      "start": "node admin-bot.js"
-    },
-    "dependencies": {
-      "puppeteer": "^21.0.0"
-    }
+  "name": "admin-bot",
+  "version": "1.0.0",
+  "description": "Automated admin bot for testing the movie review site",
+  "main": "admin-bot.js",
+  "scripts": {
+    "start": "node admin-bot.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.0.0"
   }
-  
+}
