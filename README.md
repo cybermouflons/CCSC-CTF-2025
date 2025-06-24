@@ -28,7 +28,14 @@ Although some of the challenges may run as is, it is recommended that you have d
 
 | Name | Author |
 | ---- | ------ |
+| [Cursed Locker](./forensics/cursed-locker) | canopus |
 | [TVBox](./forensics/tvbox) | GramThanos |
+| [Volatile Expert Pt. 1](./forensics/volatile-expert-pt-1) | canopus |
+| [Volatile Expert Pt. 2](./forensics/volatile-expert-pt-2) | canopus |
+| [Volatile Expert Pt. 3](./forensics/volatile-expert-pt-3) | canopus |
+| [Volatile Expert Pt. 4](./forensics/volatile-expert-pt-4) | canopus |
+| [Volatile Expert Pt. 5](./forensics/volatile-expert-pt-5) | canopus |
+| [Volatile Expert Pt. 6](./forensics/volatile-expert-pt-6) | canopus |
 
 
 
@@ -69,6 +76,5 @@ Although some of the challenges may run as is, it is recommended that you have d
 | [Memes](./web/memes) | GramThanos |
 | [Popcorn and Payloads](./web/popcorn) | [kallenosf](https://github.com/kallenosf) |
 | [Remote Control](./web/remote-control) | GramThanos |
-
 
 
