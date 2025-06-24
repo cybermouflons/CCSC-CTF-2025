@@ -7,7 +7,7 @@ services:
     environment:
       - flag=ECSC{L1gHtS_C4meRa_D3c3pTi0n...I_Me4N_AC7ioN}
     networks:
-      - appnet
+      appnet:
   cache-service:
     image: ghcr.io/cybermouflons/ccsc2025/popcorn-cache-service:latest
     restart: always
@@ -29,7 +29,7 @@ services:
       - ADMIN_PASSWORD=F6vF0Q3OXZbK5QZOSBlDzGU1LTn6ieol
       - BASE_URL=http://web-app
     networks:
-      - appnet
+      appnet:
 
 networks:
   appnet:
