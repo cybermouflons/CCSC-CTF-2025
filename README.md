@@ -29,6 +29,8 @@ Although some of the challenges may run as is, it is recommended that you have d
 | Name | Author |
 | ---- | ------ |
 | [TVBox](./forensics/tvbox) | GramThanos |
+| [Hive Heist](./forensics/hive-heist) | _darkl0rd_ |
+| [HexCell Hunt](./forensics/hexcell-hunt) | _darkl0rd_ |
 
 
 
