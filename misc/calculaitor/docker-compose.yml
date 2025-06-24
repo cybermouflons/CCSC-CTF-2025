@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  challenge:
+    build: ./setup
+    ports:
+      - "1337:8000"
+    environment:
+      - AI_SERVER_URL=https://generativelanguage.googleapis.com/v1beta/openai/
+      - AI_SERVER_API_KEY=YOUR_AI_KEY_HERE
+      - AI_SERVER_MODEL=models/gemini-2.0-flash
+    restart: always

@@ -1,0 +1,22 @@
+name: "CalculAItor"
+author: "GramThanos"
+category: misc
+
+description: "It is time to throw your traditional calculator out of the window... bacause CalculAItor is here!"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+
+flags:
+  - ECSC{pr0mpt_1nj3ct10n_w1n5_AG41N}
+
+tags:
+  - misc
+  - easy
+
+state: hidden
+version: "0.1"

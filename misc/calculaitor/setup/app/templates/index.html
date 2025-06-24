@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CalculAItor</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<style>
+		body { font-family: Arial, sans-serif; display: flex; flex-direction: column; align-items: center;}
+		.calculator { width: 300px; padding-top: 30px; padding-bottom: 30px; }
+		.display-wrapper {padding: 0px; padding-bottom: 5px; }
+		#display { width: 100%; height: 40px; line-height: 40px; font-size: 18px; text-align: center;}
+		.buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; padding-bottom: 5px;}
+		.buttons button { padding: 15px; font-size: 18px; }
+	</style>
+</head>
+<body>
+	<h1>CalculAItor</h1>
+	<div class="calculator">
+		<div class="display-wrapper">
+			<input class="form-control" type="text" id="display" disabled>
+		</div>
+		<div class="buttons">
+			<button class="btn btn-light" onclick="wrapFunc('sqrt')">√x</button>
+			<button class="btn btn-light" onclick="wrapFunc('floor')">⌊x⌋</button>
+			<button class="btn btn-light" onclick="wrapFunc('ceil')">⌈x⌉</button>
+			<button class="btn btn-light" onclick="clearDisplay()">C</button>
+
+			<button class="btn btn-light" onclick="append('7')">7</button>
+			<button class="btn btn-light" onclick="append('8')">8</button>
+			<button class="btn btn-light" onclick="append('9')">9</button>
+			<button class="btn btn-light" onclick="append('*')">&times;</button>
+
+			<button class="btn btn-light" onclick="append('4')">4</button>
+			<button class="btn btn-light" onclick="append('5')">5</button>
+			<button class="btn btn-light" onclick="append('6')">6</button>
+			<button class="btn btn-light" onclick="append('-')">-</button>
+
+			<button class="btn btn-light" onclick="append('1')">1</button>
+			<button class="btn btn-light" onclick="append('2')">2</button>
+			<button class="btn btn-light" onclick="append('3')">3</button>
+			<button class="btn btn-light" onclick="append('+')">+</button>
+
+			<button class="btn btn-light" onclick="append('/')">/</button>
+			<button class="btn btn-light" onclick="append('0')">0</button>
+			<button class="btn btn-light" onclick="append('.')">.</button>
+			<button class="btn btn-dark" onclick="calculate()">=</button>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+	<script src="/static/script.js"></script>
+</body>
+</html>
