@@ -1,0 +1,25 @@
+name: "Hive Heist"
+author: "_dark_darkl0rd_"
+category: forensics
+description: "A partial registry hive has been recovered from a suspect's machine. You are tasked to retrieve the answers to the suspect's Windows password security questions."
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+
+flags:
+  - ECSC{Kerberos:Underworld:Olympus}
+
+topics:
+  - Registry Forensics
+  - Windows
+
+tags:
+  - easy
+  - forensics
+
+state: hidden
+version: "0.1"
