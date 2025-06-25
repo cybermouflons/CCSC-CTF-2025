@@ -8,9 +8,9 @@ from fastapi import FastAPI, Request
 from pydantic import BaseModel
 
 # Configure client to connect to the AI server
-ai_base_url = os.getenv('AI_SERVER_URL')
+ai_base_url = os.getenv('AI_SERVER_URL', 'https://generativelanguage.googleapis.com/v1beta/openai/')
 ai_api_keys = os.getenv('AI_SERVER_API_KEY').split(',')
-ai_model_to_use = os.getenv('AI_SERVER_MODEL', 'llama3.1:8b')
+ai_model_to_use = os.getenv('AI_SERVER_MODEL', 'models/gemini-2.0-flash')
 
 system_prompt = """
 Convert the given math formula to valid Python code that will print the result using `print(result)`.
