@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
 import re
 import os
+import random
 import uvicorn
 from openai import OpenAI
 from fastapi import FastAPI, Request
 from pydantic import BaseModel
 
 # Configure client to connect to the AI server
-client = OpenAI(
-    base_url = os.getenv('AI_SERVER_URL'),
-    api_key= os.getenv('AI_SERVER_API_KEY')
-)
-model_to_use = os.getenv('AI_SERVER_MODEL', 'llama3.1:8b')
+ai_base_url = os.getenv('AI_SERVER_URL')
+ai_api_keys = os.getenv('AI_SERVER_API_KEY').split(',')
+ai_model_to_use = os.getenv('AI_SERVER_MODEL', 'llama3.1:8b')
 
 system_prompt = """
 Convert the given math formula to valid Python code that will print the result using `print(result)`.
@@ -19,13 +18,6 @@ Don't provide an explanation, just the Python code and nothing else.
 Only accept valid equations, nothing else. If the equation is invalid, return `print("Error")`.
 Wrap the code in 3 backticks.
 """
-
-#system_prompt = """
-#Convert the given math formula to valid Python code that will print the result using `print(result)`.
-#Don't provide an explanation, just the Python code and nothing else.
-#Wrap the code in 3 backticks.
-#"""
-
 
 app = FastAPI()
 
@@ -43,12 +35,16 @@ def evaluate(req: EvalRequest):
     expression = req.expression
     print('[AI] Expression:', expression)
     
+    client = OpenAI(
+        base_url = ai_base_url,
+        api_key = random.choice(ai_api_keys)
+    )
     query = client.chat.completions.create(
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": expression}
         ],
-        model=model_to_use
+        model=ai_model_to_use
     )
 
     response = query.choices[0].message.content

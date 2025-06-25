@@ -48,7 +48,7 @@ async def get_index(request: Request):
 
 @app.post("/calculate")
 async def calculate(eq: Equation):
-    if eq.equation and len(eq.equation) < 512:
+    if eq.equation and len(eq.equation) < 128:
         result = await evaluateExpression(eq.equation)
         return {"result": result}
     else:
