@@ -1,22 +1,28 @@
 name: "CalculAItor"
 author: "[GramThanos](https://github.com/GramThanos)"
 category: misc
-
 description: "It is time to throw your traditional calculator out of the window... because CalculAItor is here!\n\n\nAuthor: GramThanos"
 
 value: 500
-type: dynamic
+type: dynamic_docker
 extra:
   initial: 500
   minimum: 100
   decay: 25
+  redirect_type: http
+  compose_stack: !filecontents docker-compose.yml
 
 flags:
   - ECSC{pr0mpt_1nj3ct10n_w1n5_AG41N}
 
+topics:
+  - Prompt Injection
+
 tags:
   - misc
-  - easy
+
+files:
+  - public/misc-calculaitor.zip
 
 state: hidden
 version: "0.1"
