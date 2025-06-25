@@ -29,7 +29,7 @@ Although some of the challenges may run as is, it is recommended that you have d
 | Name | Author |
 | ---- | ------ |
 | [Cursed Locker](./forensics/cursed-locker) | canopus |
-| [TVBox](./forensics/tvbox) | GramThanos |
+| [TVBox](./forensics/tvbox) | [GramThanos](https://github.com/GramThanos) |
 | [Volatile Expert Pt. 1](./forensics/volatile-expert-pt-1) | canopus |
 | [Volatile Expert Pt. 2](./forensics/volatile-expert-pt-2) | canopus |
 | [Volatile Expert Pt. 3](./forensics/volatile-expert-pt-3) | canopus |
@@ -43,7 +43,8 @@ Although some of the challenges may run as is, it is recommended that you have d
 
 | Name | Author |
 | ---- | ------ |
-| [CalculAItor](./misc/calculaitor) | GramThanos |
+| [CalculAItor](./misc/calculaitor) | [GramThanos](https://github.com/GramThanos) |
+| [Date MCP](./misc/date-mcp) | [GramThanos](https://github.com/GramThanos) |
 | [You've got a flag in me](./misc/you-ve-got-a-flag-in-me) | tratrafe2 |
 
 
@@ -74,9 +75,9 @@ Although some of the challenges may run as is, it is recommended that you have d
 
 | Name | Author |
 | ---- | ------ |
-| [Cheesy Web](./web/cheesy-web) | deltaclock & GramThanos |
-| [Memes](./web/memes) | GramThanos |
+| [Cheesy Web](./web/cheesy-web) | [deltaclock](https://github.com/deltaclock) & [GramThanos](https://github.com/GramThanos) |
+| [Memes](./web/memes) | [GramThanos](https://github.com/GramThanos) |
 | [Popcorn and Payloads](./web/popcorn) | [kallenosf](https://github.com/kallenosf) |
-| [Remote Control](./web/remote-control) | GramThanos |
+| [Remote Control](./web/remote-control) | [GramThanos](https://github.com/GramThanos) |
 
 

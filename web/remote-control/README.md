@@ -5,7 +5,7 @@
 
 **Category**: web
 
-**Author**: GramThanos
+**Author**: [GramThanos](https://github.com/GramThanos)
 
 ## Description
 

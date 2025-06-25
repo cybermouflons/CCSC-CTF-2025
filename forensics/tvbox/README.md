@@ -3,7 +3,7 @@
 
 **Category**: forensics
 
-**Author**: GramThanos
+**Author**: [GramThanos](https://github.com/GramThanos)
 
 ## Description
 
@@ -12,4 +12,7 @@ He send me the firmware and from it I was also able to find the device info nad 
 Here is the sketchy part... the firmware from the seller is not the same with the firmware provided by the manufacturer... same name, different size...
 Have a look into the firmware provided by the seller. I am afraid he may installed some malware inside!
 Firmware provided by the seller: https://drive.google.com/file/d/12gy3mItfYi4w3Q9shI_VVEQw693fWsNZ/view?usp=sharing `sha256:a1f18ce1e1c0b2203891c3b74339bf8b522087f73baa0e2dfd698e8b543420b6`
+
+
+Author: GramThanos
 
