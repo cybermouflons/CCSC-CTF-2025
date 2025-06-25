@@ -1,0 +1,26 @@
+name: "Just a Key"
+author: "[GramThanos](https://github.com/GramThanos)"
+category: reverse
+
+description: |
+  Find the arg to recover the flag. 
+
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+
+flags:
+  - ECSC{jU5t_4_n1C3_waRM_up_Ch4113nGe!}
+
+tags:
+  - reverse
+
+files:
+  - "public/rev-just-a-key.zip"
+
+state: hidden
+version: "0.1"
