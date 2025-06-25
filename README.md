@@ -29,6 +29,8 @@ Although some of the challenges may run as is, it is recommended that you have d
 | Name | Author |
 | ---- | ------ |
 | [Cursed Locker](./forensics/cursed-locker) | canopus |
+| [HexCell Hunt](./forensics/hexcell-hunt) | _dark_darkl0rd_ |
+| [Hive Heist](./forensics/hive-heist) | _dark_darkl0rd_ |
 | [TVBox](./forensics/tvbox) | [GramThanos](https://github.com/GramThanos) |
 | [Volatile Expert Pt. 1](./forensics/volatile-expert-pt-1) | canopus |
 | [Volatile Expert Pt. 2](./forensics/volatile-expert-pt-2) | canopus |
@@ -36,8 +38,6 @@ Although some of the challenges may run as is, it is recommended that you have d
 | [Volatile Expert Pt. 4](./forensics/volatile-expert-pt-4) | canopus |
 | [Volatile Expert Pt. 5](./forensics/volatile-expert-pt-5) | canopus |
 | [Volatile Expert Pt. 6](./forensics/volatile-expert-pt-6) | canopus |
-|[Hexcell Hunt](./forensics/hexcell-hunt)|\_dark_darkl0rd\_|
-|[Hive Heist](./forensics/hive-heist)|\_dark_darkl0rd\_|
 
 
 
