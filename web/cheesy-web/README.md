@@ -5,7 +5,7 @@
 
 **Category**: web
 
-**Author**: deltaclock & GramThanos
+**Author**: [deltaclock](https://github.com/deltaclock) & [GramThanos](https://github.com/GramThanos)
 
 ## Description
 
