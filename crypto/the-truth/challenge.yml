@@ -11,7 +11,7 @@ extra:
   decay: 25
 
 flags:
-  - CTFLIB{juST_4n_ex4mpl3_simpl3_flag_string}
+  - ECSC{juST_4n_ex4mpl3_simpl3_flag_string}
 
 topics:
   - Frequency Analysis
