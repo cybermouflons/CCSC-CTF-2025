@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-import subprocess
-import platform
+import re
 import uvicorn
+import platform
+import subprocess
 from typing import Any
 
 from mcp.server import Server
@@ -22,6 +23,10 @@ async def get_current_time(tz: str) -> str:
 	Args:
 		timezone: IANA timezone (e.g. 'Europe/Athens', 'America/New_York')
 	"""
+	# Easy if tz is valid using regex
+	if not re.fullmatch(r'\S+/\S+', tz):
+		return "Invalid timezone format"
+
 	sysname = platform.system()
 	x = True
 
@@ -40,16 +45,17 @@ async def get_current_time(tz: str) -> str:
 
 	try:
 		result = subprocess.run(cmd, capture_output=True, text=True, shell=True)
-	except:
-		return "error running subprocess"
+		out = result.stdout.strip()
+	except Exception as e:
+		print(e)
+		return "error getting time"
 
 	# AI will know what was the error based on the result
 	#if result.returncode != 0:
 	#	return f"bad timezone? {tz}"
-
-	out = result.stdout.strip()
+	
 	# print("Got time:", out)
-	return out
+	return out if out else "unkown error"
 
 
 # Create server app
