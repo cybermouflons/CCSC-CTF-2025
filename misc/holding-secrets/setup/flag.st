@@ -1,0 +1,52 @@
+PROGRAM My_First_Program
+  VAR
+    PB1 AT %IX0.0 : BOOL := 1;
+    LAMP AT %QX0.0 : BOOL;
+    FLAG_0 AT %MW0 : WORD := 69;
+    FLAG_1 AT %MW1 : WORD := 67;
+    FLAG_2 AT %MW2 : WORD := 83;
+    FLAG_3 AT %MW3 : WORD := 67;
+    FLAG_4 AT %MW4 : WORD := 123;
+    FLAG_5 AT %MW5 : WORD := 114;
+    FLAG_6 AT %MW6 : WORD := 51;
+    FLAG_7 AT %MW7 : WORD := 97;
+    FLAG_8 AT %MW8 : WORD := 100;
+    FLAG_9 AT %MW9 : WORD := 95;
+    FLAG_10 AT %MW10 : WORD := 109;
+    FLAG_11 AT %MW11 : WORD := 48;
+    FLAG_12 AT %MW12 : WORD := 100;
+    FLAG_13 AT %MW13 : WORD := 98;
+    FLAG_14 AT %MW14 : WORD := 117;
+    FLAG_15 AT %MW15 : WORD := 115;
+    FLAG_16 AT %MW16 : WORD := 95;
+    FLAG_17 AT %MW17 : WORD := 104;
+    FLAG_18 AT %MW18 : WORD := 111;
+    FLAG_19 AT %MW19 : WORD := 108;
+    FLAG_20 AT %MW20 : WORD := 100;
+    FLAG_21 AT %MW21 : WORD := 49;
+    FLAG_22 AT %MW22 : WORD := 110;
+    FLAG_23 AT %MW23 : WORD := 103;
+    FLAG_24 AT %MW24 : WORD := 95;
+    FLAG_25 AT %MW25 : WORD := 114;
+    FLAG_26 AT %MW26 : WORD := 101;
+    FLAG_27 AT %MW27 : WORD := 103;
+    FLAG_28 AT %MW28 : WORD := 105;
+    FLAG_29 AT %MW29 : WORD := 53;
+    FLAG_30 AT %MW30 : WORD := 116;
+    FLAG_31 AT %MW31 : WORD := 101;
+    FLAG_32 AT %MW32 : WORD := 114;
+    FLAG_33 AT %MW33 : WORD := 115;
+    FLAG_34 AT %MW34 : WORD := 125;
+  END_VAR
+
+  LAMP := PB1;
+END_PROGRAM
+
+
+CONFIGURATION Config0
+
+  RESOURCE Res0 ON PLC
+    TASK task0(INTERVAL := T#20ms,PRIORITY := 0);
+    PROGRAM instance0 WITH task0 : My_First_Program;
+  END_RESOURCE
+END_CONFIGURATION

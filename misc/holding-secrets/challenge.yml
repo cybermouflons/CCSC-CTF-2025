@@ -1,0 +1,24 @@
+name: "Holding Secrets"
+author: "k4rt0fl3r"
+category: misc
+description: "A PLC in a galaxy far far away is holding a secret. Find it and you win."
+
+value: 500
+type: dynamic_docker
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  redirect_type: direct
+  compose_stack: !filecontents docker-compose.yml
+
+flags:
+  - ECSC{r3ad_m0dbus_hold1ng_regi5ters}
+
+tags:
+  - misc
+  - ics
+  - easy
+
+state: hidden
+version: "0.1"

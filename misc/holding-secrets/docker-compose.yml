@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  challenge:
+    image: ghcr.io/cybermouflons/ccsc2025/holding-secrets:latest
+    restart: always
+    ports:
+      - 502:502
+    build:
+      context: ./setup
+      dockerfile: Dockerfile
+      labels:
+        ctf.challenge.name: holding-secrets
