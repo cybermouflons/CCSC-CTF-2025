@@ -12,6 +12,9 @@
 It's not always ptmalloc... And you don't always have free wins()
 
 
+Author: zer0heir
+
+
 
 ## Run locally
 

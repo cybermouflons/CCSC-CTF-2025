@@ -61,7 +61,7 @@ Although some of the challenges may run as is, it is recommended that you have d
 | [Log Recorder](./pwn/log-recorder) | [r3dsh3rl0ck](https://github.com/R3dSh3rl0ck) |
 | [pwnb0t](./pwn/pwnb0t) | [r3dsh3rl0ck](https://github.com/R3dSh3rl0ck) |
 | [shellcode](./pwn/shellcode) | s3nn |
-| [Station Maintenace](./pwn/station-maintance) | Mike Takaronis <mtakaronis@ssl-unipi.gr> |
+| [Station Maintenace](./pwn/station-maintance) | [r3dsh3rl0ck](https://github.com/R3dSh3rl0ck) |
 | [zer0-2](./pwn/zer0-2) | zer0heir |
 | [zer0cool](./pwn/zer0cool) | zer0heir |
 
