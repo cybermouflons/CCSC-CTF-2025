@@ -5,11 +5,14 @@
 
 **Category**: pwn
 
-**Author**: Mike Takaronis <mtakaronis@ssl-unipi.gr>
+**Author**: [r3dsh3rl0ck](https://github.com/R3dSh3rl0ck)
 
 ## Description
 
 Maintain the station using our standard maintenance app. A recent system patch has locked a flag within the station's database. Access the app, bypass the security measures, and retrieve the flag before the system fully reboots.
+
+
+Author: r3dsh3rl0ck
 
 
 ## Run locally
