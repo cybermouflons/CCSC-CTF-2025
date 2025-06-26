@@ -5,11 +5,14 @@
 
 **Category**: pwn
 
-**Author**: Mike Takaronis <mtakaronis@ssl-unipi.gr>
+**Author**: [r3dsh3rl0ck](https://github.com/R3dSh3rl0ck)
 
 ## Description
 
 Transmit your logs effortlessly with the Space Log Recorder using our cutting-edge space app.
+
+
+Author: r3dsh3rl0ck
 
 
 ## Run locally
