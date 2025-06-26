@@ -58,8 +58,8 @@ Although some of the challenges may run as is, it is recommended that you have d
 
 | Name | Author |
 | ---- | ------ |
-| [Log Recorder](./pwn/log-recorder) | Mike Takaronis <mtakaronis@ssl-unipi.gr> |
-| [pwnb0t](./pwn/pwnb0t) | Mike Takaronis <mtakaronis@ssl-unipi.gr> |
+| [Log Recorder](./pwn/log-recorder) | [r3dsh3rl0ck](https://github.com/R3dSh3rl0ck) |
+| [pwnb0t](./pwn/pwnb0t) | [r3dsh3rl0ck](https://github.com/R3dSh3rl0ck) |
 | [shellcode](./pwn/shellcode) | s3nn |
 | [Station Maintenace](./pwn/station-maintance) | Mike Takaronis <mtakaronis@ssl-unipi.gr> |
 | [zer0-2](./pwn/zer0-2) | zer0heir |
