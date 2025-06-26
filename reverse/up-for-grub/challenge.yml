@@ -1,0 +1,25 @@
+name: "Up for GRUBs"
+author: "canopus"
+category: reverse
+
+description: This is weird... No description
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+
+flags:
+  - ECSC{cust0m_grub_4nd_m3md1sk_r3v3rs3!}
+
+tags:
+  - reverse
+  - hard(?)
+
+files:
+  - "public/reverse_up_for_grubs.zip"
+
+state: hidden
+version: "0.1"
