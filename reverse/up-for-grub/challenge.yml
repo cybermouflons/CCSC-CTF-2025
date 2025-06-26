@@ -16,7 +16,7 @@ flags:
 
 tags:
   - reverse
-  - hard(?)
+  - medium(-ish?)
 
 files:
   - "public/reverse_up_for_grubs.zip"
