@@ -1,0 +1,29 @@
+name: "Pot Pouri"
+author: "wizard_alfredo"
+category: misc
+description: "A mischievous trickster has sent 100 mysterious transmissions through the network. Can you unravel every single one before the clock runs out and seize the ultimate secret?\n\n\nAuthor: wizard_alfredo"
+
+value: 500
+type: docker-dynamic
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  docker_image: ctf/misc:pot-pouri
+
+deploy:
+  docker_challenges: dist/docker-challenge.tar
+
+flags:
+  - ECSC{it5_7h3_f1r57_4nd_la57_71m3_y0u_w1ll_533_m4nch3573r_3nc0d1n6!}
+
+topics:
+  - Hardware Protocols
+
+tags:
+  - misc
+  - hardware
+  - easy
+
+state: hidden
+version: "0.1"

@@ -1,0 +1,34 @@
+name: "Date MCP"
+author: "[GramThanos](https://github.com/GramThanos)"
+category: misc
+description: "Hey! I just set up an MCP server so that your AIs know that you are playing CTFs at 2am... lol!\n\n\nAuthor: GramThanos"
+
+value: 500
+type: docker-dynamic
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  docker_image: ctf/misc:date-mcp
+
+deploy:
+  docker_challenges: dist/docker-challenge.tar
+
+flags:
+  - ECSC{If_1_c0uLd_TuRn_b4cK_t1m3_I_wOu1d_F1x_Th1s_BuG}
+
+topics:
+  - Model Context Protocol (MCP)
+  - Code Injection
+  - Remote Code Execution
+  - Python
+  - RegEx
+
+tags:
+  - misc
+
+files:
+  - public/misc-date-mcp.zip
+
+state: hidden
+version: "0.1"

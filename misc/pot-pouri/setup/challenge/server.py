@@ -46,8 +46,9 @@ Let me give you an example to get started:
 {Colors.OKGREEN}Correct!{Colors.ENDC}
 """
 
-
-FLAG = "FLAG{it5_7h3_f1r57_4nd_la57_71m3_y0u_w1ll_533_m4nch3573r_3nc0d1n6!}"
+FLAG = 'ECSC{example-flag}'
+if os.path.exists('flag.txt'):
+    FLAG = open('flag.txt', 'r').read().strip()
 
 
 def get_encoders():
