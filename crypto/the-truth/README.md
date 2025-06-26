@@ -1,7 +1,7 @@
 # The Truth
 
 
-**Category**: cypto
+**Category**: crypto
 
 **Author**: [GramThanos](https://github.com/GramThanos)
 
@@ -11,7 +11,7 @@ Dear nano-community,
 
 I found it! I uncovered the truth!
 You can find my encrypted message attached.
-Use our substitution table to decript it!
+Use our substitution table to decrypt it!
 
  Best regards,
 Thanos

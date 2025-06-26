@@ -16,11 +16,12 @@ Although some of the challenges may run as is, it is recommended that you have d
 ## Challenges
 
 
-### cypto
+### crypto
 
 | Name | Author |
 | ---- | ------ |
 | [The Truth](./crypto/the-truth) | [GramThanos](https://github.com/GramThanos) |
+| [This is different](./crypto/this-is-different) | [P3taByte](https://x.com/0xp374) © [Zer0Tolerance](https://x.com/0tolerance_ctf) |
 
 
 

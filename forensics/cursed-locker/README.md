@@ -7,6 +7,6 @@
 
 ## Description
 
-Oh noo, I was accidentaly locked outside my brand new Windows 11 Box! Please help me... 
+Oh noo, I was accidentally locked outside my brand new Windows 11 Box! Please help me... 
 Download:  ``
 
