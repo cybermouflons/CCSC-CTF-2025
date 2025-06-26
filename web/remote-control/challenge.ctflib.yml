@@ -11,6 +11,9 @@ extra:
   decay: 25
   docker_image: ctf/web:remote-control
 
+deploy:
+  docker_challenges: public/docker-challenge.tar
+
 flags:
   - ECSC{I_gOt_mA_F1Rt_z3r0-d4y}
 

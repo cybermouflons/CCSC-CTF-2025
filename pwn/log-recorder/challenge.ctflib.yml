@@ -4,13 +4,15 @@ category: pwn
 description: "Transmit your logs effortlessly with the Space Log Recorder using our cutting-edge space app.\n\n\nAuthor: r3dsh3rl0ck"
 
 value: 500
-type: dynamic_docker
+type: docker-dynamic
 extra:
   initial: 500
   minimum: 100
   decay: 25
-  redirect_type: direct
-  compose_stack: !filecontents docker-compose.yml
+  docker_image: ctf/pwn:log-recorder
+
+deploy:
+  docker_challenges: dist/docker-challenge.tar
 
 flags:
   - FLAG{r3c0rd1ng_sp4c3_m1ss1ons_sh0uld_b3_fun}

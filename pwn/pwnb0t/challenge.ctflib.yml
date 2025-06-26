@@ -4,13 +4,15 @@ category: pwn
 description: "-\n\n\nAuthor: r3dsh3rl0ck"
 
 value: 500
-type: dynamic_docker
+type: docker-dynamic
 extra:
   initial: 500
   minimum: 100
   decay: 25
-  redirect_type: direct
-  compose_stack: !filecontents docker-compose.yml
+  docker_image: ctf/pwn:pwnb0t
+
+deploy:
+  docker_challenges: dist/docker-challenge.tar
 
 tags:
   - pwn

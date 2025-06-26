@@ -1,0 +1,35 @@
+name: "CalculAItor"
+author: "[GramThanos](https://github.com/GramThanos)"
+category: misc
+description: "It is time to throw your traditional calculator out of the window... because CalculAItor is here!\n\n\nAuthor: GramThanos"
+
+value: 500
+type: docker-dynamic
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  docker_image: ctf/misc:calculaitor
+
+deploy:
+  docker_challenges: dist/docker-challenge.tar
+
+flags:
+  - ECSC{pr0mpt_1nj3ct10n_w1n5_AG41N}
+  - {
+    type: "docker-environment-variable",
+    content: "AI_SERVER_API_KEY",
+    data: "YOUR_AI_KEY1_HERE,YOUR_AI_KEY2_HERE",
+  }
+
+topics:
+  - Prompt Injection
+
+tags:
+  - misc
+
+files:
+  - public/misc-calculaitor.zip
+
+state: hidden
+version: "0.1"

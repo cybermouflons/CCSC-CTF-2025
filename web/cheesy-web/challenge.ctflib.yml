@@ -11,6 +11,9 @@ extra:
   decay: 25
   docker_image: ctf/web:cheesy-web
 
+deploy:
+  docker_challenges: public/docker-challenge.tar
+
 flags:
   #- {
   #  type: "docker-personal",
@@ -26,7 +29,7 @@ topics:
 
 tags:
   - web
-  - easy
+  - medium
 
 state: hidden
 version: "0.1"

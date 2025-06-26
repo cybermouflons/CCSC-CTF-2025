@@ -9,13 +9,15 @@ description: |
   Author: s3nn
 
 value: 500
-type: dynamic_docker
+type: docker-dynamic
 extra:
   initial: 500
   minimum: 100
   decay: 25
-  redirect_type: direct
-  compose_stack: !filecontents docker-compose.yml
+  docker_image: ctf/pwn:shellcode
+
+deploy:
+  docker_challenges: dist/docker-challenge.tar
 
 flags:
   - ECSC{sh3llcode_ROPPING_ftw_TTTTTTTT}

@@ -11,6 +11,9 @@ extra:
   decay: 25
   docker_image: ctf/web:memes
 
+deploy:
+  docker_challenges: public/docker-challenge.tar
+
 flags:
   - ECSC{k33p-c4Lm_anD-l3T_tH3-s3Cur1Ty_t3Am-CrY}
 
