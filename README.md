@@ -49,6 +49,7 @@ Although some of the challenges may run as is, it is recommended that you have d
 | [CalculAItor](./misc/calculaitor) | [GramThanos](https://github.com/GramThanos) |
 | [Date MCP](./misc/date-mcp) | [GramThanos](https://github.com/GramThanos) |
 | [Holding Secrets](./misc/holding-secrets) | k4rt0fl3r |
+| [Pot Pouri](./misc/pot-pouri) | wizard_alfredo |
 | [You've got a flag in me](./misc/you-ve-got-a-flag-in-me) | tratrafe2 |
 
 
