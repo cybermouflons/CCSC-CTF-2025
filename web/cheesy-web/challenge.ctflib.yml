@@ -1,0 +1,32 @@
+name: "Cheesy Web"
+author: "[deltaclock](https://github.com/deltaclock) & [GramThanos](https://github.com/GramThanos)"
+category: web
+description: "🧀\n\n\nAuthor: deltaclock & GramThanos"
+
+value: 500
+type: docker-dynamic
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  docker_image: ctf/web:cheesy-web
+
+flags:
+  #- {
+  #  type: "docker-personal",
+  #  content: "ECSC{%PERSONAL%|https://x.com/pilvar222/status/1782593915192795204}",
+  #  data: "hmac$10$LJJmti1xCygsj8M5mlnmNWyqaIp31Ifr",
+  #}
+  - ECSC{https://x.com/pilvar222/status/1782593915192795204}
+
+topics:
+  - PHP
+  - PHP Headers Remove
+  - Closed Shadow DOM
+
+tags:
+  - web
+  - easy
+
+state: hidden
+version: "0.1"

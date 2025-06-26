@@ -1,0 +1,28 @@
+name: "Memes"
+author: "[GramThanos](https://github.com/GramThanos)"
+category: web
+description: "Time to generate some memes!\n\n\nAuthor: GramThanos"
+
+value: 500
+type: docker-dynamic
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  docker_image: ctf/web:memes
+
+flags:
+  - ECSC{k33p-c4Lm_anD-l3T_tH3-s3Cur1Ty_t3Am-CrY}
+
+topics:
+  - CVE-2023-38633
+
+tags:
+  - web
+  - medium
+
+files:
+  - public/web-memes.zip
+
+state: hidden
+version: "0.1"
