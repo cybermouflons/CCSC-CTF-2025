@@ -70,6 +70,7 @@ Although some of the challenges may run as is, it is recommended that you have d
 | ---- | ------ |
 | [Anti-tricks](./reverse/anti-tricks) | [kallenosf](https://github.com/kallenosf) |
 | [Just a Key](./reverse/just-a-key) | [GramThanos](https://github.com/GramThanos) |
+| [Up for GRUBs](./reverse/up-for-grub) | canopus |
 
 
 
