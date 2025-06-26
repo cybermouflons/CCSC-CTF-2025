@@ -1,6 +1,6 @@
 default: print
 	tar cvf public/docker-challenge.tar -C setup app Dockerfile
-	cd setup/app && zip -r ../../public/station-maintenance.zip ./station-maintenance ./glibc/libc.so.6 ./glibc/ld-linux-x86-64.so.2
+	cd setup/app && zip -r ../../public/pwn-station-maintenance.zip ./station-maintenance ./glibc/libc.so.6 ./glibc/ld-linux-x86-64.so.2
 	@echo Challenge compiled.
 print:
 	@echo Current Flag: $$(cat setup/app/flag.txt)
@@ -10,5 +10,5 @@ changeflag:
 	@echo Flag changed.
 clean:
 	-rm -f public/docker-challenge.tar
-	-rm -f public/station-maintenance.zip
+	-rm -f public/pwn-station-maintenance.zip
 	@echo Challenge cleaned.

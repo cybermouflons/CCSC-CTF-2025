@@ -4,13 +4,15 @@ category: pwn
 description: "Maintain the station using our standard maintenance app. A recent system patch has locked a flag within the station's database. Access the app, bypass the security measures, and retrieve the flag before the system fully reboots.\n\n\nAuthor: r3dsh3rl0ck"
 
 value: 500
-type: dynamic_docker
+type: docker-dynamic
 extra:
   initial: 500
   minimum: 100
   decay: 25
-  redirect_type: direct
-  compose_stack: !filecontents docker-compose.yml
+  docker_image: ctf/pwn:station-maintenace
+
+deploy:
+  docker_challenges: dist/docker-challenge.tar
 
 flags:
   - FLAG{sp4c3_syst3ms_n3v3r_w3r3_s4f3r}

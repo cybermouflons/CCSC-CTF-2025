@@ -9,13 +9,15 @@ description: |
   Author: zer0heir
 
 value: 500
-type: dynamic_docker
+type: docker-dynamic
 extra:
   initial: 500
   minimum: 100
   decay: 25
-  redirect_type: direct
-  compose_stack: !filecontents docker-compose.yml
+  docker_image: ctf/pwn:zer0cool
+
+deploy:
+  docker_challenges: dist/docker-challenge.tar
 
 flags:
   - ECSC{GenZ_GenA_Go_Watch_Hackers_the_Movie}
