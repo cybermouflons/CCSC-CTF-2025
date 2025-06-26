@@ -8,40 +8,33 @@ homepage: "https://twitter.com/0tolerance_ctf"
 category: crypto
 description: "I hope you have enough time for this. Good luck!\n\n\n*P3taByte © Zer0Tolerance*"
 
-type: docker-dynamic
+type: dynamic_docker
 value: 500
 extra:
-    initial: 500
-    decay: 15
-    minimum: 50
+  initial: 500
+  decay: 25
+  minimum: 100
+  redirect_type: direct
+  compose_stack: !filecontents docker-compose.yml
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
 # Can be removed if unused
 # Accepts strings or dictionaries of CTFd API data
 flags:
-    # A static case sensitive flag
-    - ECSC{y0u_4r3_7h3_l0rd_0f_c0d3_br34k1n9}
-
-deploy:
-    docker_challenges: dist/this-is-different.tar
-
-# Topics are used to help tell what techniques/information a challenge involves
-# They are generally only visible to admins
-# Accepts strings
-topics:
-    - DES
+  # A static case sensitive flag
+  - ECSC{y0u_4r3_7h3_l0rd_0f_c0d3_br34k1n9}
 
 # Tags are used to provide additional public tagging to a challenge
 # Can be removed if unused
 # Accepts strings
 tags:
-    - crypto
-    - hard
+  - crypto
+  - hard
 
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
 files:
-    - dist/crypto-this-is-different.zip
+  - dist/crypto-this-is-different.zip
 
 # The state of the challenge.
 # If the field is omitted, the challenge is visible by default.
