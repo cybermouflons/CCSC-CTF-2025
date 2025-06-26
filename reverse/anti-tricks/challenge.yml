@@ -6,6 +6,9 @@ description: |
   A tiny ELF binary with a big attitude. It really doesn't want you poking around.
 
 
+  Author: kallenosf
+
+
 value: 500
 type: dynamic
 extra:
@@ -21,7 +24,7 @@ tags:
   - medium
 
 files:
-  - "public/chall"
+  - "public/rev-anti-tricks.zip"
 
 state: hidden
 version: "0.1"

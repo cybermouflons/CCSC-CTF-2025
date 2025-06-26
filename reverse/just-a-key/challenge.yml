@@ -3,7 +3,10 @@ author: "[GramThanos](https://github.com/GramThanos)"
 category: reverse
 
 description: |
-  Find the arg to recover the flag. 
+  Find the arg to recover the flag.
+
+
+  Author: GramThanos
 
 
 value: 500

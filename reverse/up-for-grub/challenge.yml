@@ -2,7 +2,11 @@ name: "Up for GRUBs"
 author: "canopus"
 category: reverse
 
-description: This is weird... No description
+description: |
+  This is weird... No description
+
+
+  Author: canopus
 
 value: 500
 type: dynamic
@@ -16,10 +20,10 @@ flags:
 
 tags:
   - reverse
-  - medium(-ish?)
+  - medium
 
 files:
-  - "public/reverse_up_for_grubs.zip"
+  - "public/rev-up-for-grubs.zip"
 
 state: hidden
 version: "0.1"
