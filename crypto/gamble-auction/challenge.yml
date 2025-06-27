@@ -1,0 +1,26 @@
+name: "Gamble Auction"
+author: "[Gramthanos](https://github.com/gramthanos) & Rasty"
+category: crypto
+description: "Time to gamble a bit!\n\n\nAuthors: Gramthanos & Rasty"
+
+value: 500
+type: dynamic_docker
+extra:
+  initial: 500
+  decay: 25
+  minimum: 100
+  redirect_type: direct
+  compose_stack: !filecontents docker-compose.yml
+
+flags:
+  - ECSC{y3s___th3_lsb_0r4cl3_4tt4ck_1s_4ppl1c4bl3_t0_p41ll13r_t00!}
+
+tags:
+  - crypto
+  - medium
+
+files:
+  - public/crypto-gamble-auction.zip
+
+state: visible
+version: "0.1"
