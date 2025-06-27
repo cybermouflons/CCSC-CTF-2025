@@ -1,3 +1,4 @@
+import os
 import string
 import random
 import signal
@@ -8,19 +9,21 @@ from nrzi import NRZI
 from hamming74 import Hamming
 from uart import UART
 
+
 # ANSI color codes for a friendlier UI
 class Colors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
+    HEADER = "\033[95m"
+    OKBLUE = "\033[94m"
+    OKGREEN = "\033[92m"
+    WARNING = "\033[93m"
+    FAIL = "\033[91m"
+    ENDC = "\033[0m"
+    BOLD = "\033[1m"
+
 
 WELCOME = f"""
 {Colors.HEADER}{Colors.BOLD}
- ____       _     ____                  _ 
+ ____       _     ____                  _
 |  _ \ ___ | |_  |  _ \ ___  _   _ _ __(_)
 | |_) / _ \| __| | |_) / _ \| | | | '__| |
 |  __/ (_) | |_  |  __/ (_) | |_| | |  | |
@@ -46,24 +49,24 @@ Let me give you an example to get started:
 {Colors.OKGREEN}Correct!{Colors.ENDC}
 """
 
-FLAG = 'ECSC{example-flag}'
-if os.path.exists('flag.txt'):
-    FLAG = open('flag.txt', 'r').read().strip()
+FLAG = "ECSC{example-flag}"
+if os.path.exists("flag.txt"):
+    FLAG = open("flag.txt", "r").read().strip()
 
 
 def get_encoders():
     return {
-        'UART': UART(data_bits=8, parity=True).encode,
-        'Hamming74': Hamming().encode,
-        'Manchester': Manchester().encode,
-        'NRZI': NRZI(initial_level=0).encode,
+        "UART": UART(data_bits=8, parity=True).encode,
+        "Hamming74": Hamming().encode,
+        "Manchester": Manchester().encode,
+        "NRZI": NRZI(initial_level=0).encode,
     }
 
 
 def random_message(max_len=8) -> str:
     length = random.randint(1, max_len)
     alphabet = string.ascii_letters + string.digits
-    return ''.join(random.choice(alphabet) for _ in range(length))
+    return "".join(random.choice(alphabet) for _ in range(length))
 
 
 def timed_input(timeout: int) -> str:
@@ -108,8 +111,7 @@ def main():
     print(f"\n{FLAG}")
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
