@@ -1,0 +1,20 @@
+{
+	"name": "missing_es_ence",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"keywords": [],
+	"author": "gramthanos",
+	"license": "ISC",
+	"dependencies": {
+		"cookie-parser": "^1.4.6",
+		"express": "^4.17.1",
+		"jsonwebtoken": "^8.5.1",
+		"nunjucks": "^3.2.0",
+		"sqlite": "^5.1.1",
+		"sqlite3": "^5.1.7"
+	}
+}

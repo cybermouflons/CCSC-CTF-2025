@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Capture The Es_ence</title>
+		<link rel="icon" href="../static/images/favicon.ico" />
+
+		<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../static/css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="bg-image"></div>
+		<div class="container page-container">
+			<div class="row main-wrapper">
+				<div class="col side-left">
+					<div class="content-wrapper">
+						<h1>Capture<br>the<br>Es_ence</h1>
+						<h2>Photo<br>Competition</h2>
+					</div>
+				</div>
+				<div class="col side-right">
+					<div class="content-wrapper">
+						<h1 class="islogin">Login</h1>
+						<h1 class="isregister">Register</h1>
+						<form>
+							<div class="mb-3">
+								<label for="login-username" class="form-label">Username</label>
+								<input type="text" class="form-control" id="username">
+							</div>
+							<div class="mb-3">
+								<label for="password" class="form-label">Password</label>
+								<input type="password" class="form-control" id="password">
+							</div>
+							<div class="row">
+								<div class="col">
+									<button type="button" class="btn btn-primary islogin" id="login-btn">Login</button>
+									<button type="button" class="btn btn-primary isregister" id="register-btn">Register</button>
+								</div>
+								<div class="col side-action">
+									<a class="islogin" id="to-register-btn">Register to vote</a>
+									<a class="isregister" id="to-login-btn">Already registered</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="alert-msg" class="alert alert-warning mt-3" style="display: none;" role="alert">
+				No message.
+			</div>
+			<div class="foonote mt-3">Background image from <a href="https://unsplash.com/">unsplash.com</a></small></div>
+		</div>
+		<script type="text/javascript" src="../static/js/jquery-3.6.0.slim.min.js"></script>
+		<script type="text/javascript" src="../static/js/login.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				let img = new Image();
+				img.src = 'https://source.unsplash.com/random/960x540/?view';
+				img.onload = function() {
+					$('.bg-image').css({
+						'background-image': 'url("' + img.src + '")',
+						'opacity': '1'
+					});
+				}
+			});
+		</script>
+	</body>
+</html>

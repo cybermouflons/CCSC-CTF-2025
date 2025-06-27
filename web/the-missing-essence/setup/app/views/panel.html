@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Capture The Missing Es_ence</title>
+		<link rel="icon" href="../static/images/favicon.ico" />
+
+		<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../static/css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="bg-image"></div>
+		<div class="container pt-4 pb-4">
+			<div class="row main-wrapper">
+				<div class="col-6 side-left">
+					<div class="content-wrapper">
+						<h1>Capture the Es_ence</h1>
+						<h2>Photo Competition</h2>
+					</div>
+				</div>
+				<div class="col-6 side-left">
+					<div class="content-wrapper user-info">
+						Welcome {{ user }}<br>
+						<a href="logout">Sign out</a>
+					</div>
+				</div>
+				<div class="col-12 side-right">
+					<div class="content-wrapper">
+						<h3>Vote for your favorite shot</h3>
+						<div class="row" id="gallery">
+						</div>
+					</div>
+				</div>
+				<div class="col-12 text-center mb-2">
+					<small>{{ message }}</small>
+				</div>
+			</div>
+			<div class="foonote">Images from <a href="https://unsplash.com/">unsplash.com</a></small></div>
+		</div>
+		<script type="text/javascript" src="../static/js/jquery-3.6.0.slim.min.js"></script>
+		<!--<script type="text/javascript" src="../static/js/login.js"></script>-->
+		<script type="text/javascript">
+			$(function() {
+				let topic = ['technology', 'animal', 'abstruct', 'sky'];
+				for (let i = 0; i < 4; i++) {
+					$('#gallery').append('\
+						<div class="col-6 mt-3 mb-3 gallery-item">\
+							<div class="gallery-cover">' + ((min, max) => min + Math.floor(Math.random() * (max - min)))(1, 1000) + ' Votes</div>\
+							<img src="https://source.unsplash.com/random/480x270/?' + topic[i] + '"/>\
+						</div>\
+					');
+				}
+			});
+		</script>
+	</body>
+</html>

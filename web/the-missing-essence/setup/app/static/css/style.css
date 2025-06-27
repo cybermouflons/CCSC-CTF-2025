@@ -1,0 +1,126 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	background-color: #eeeeee;
+	height: 100%;
+	width: 100%;
+}
+.bg-image {
+	position: fixed;
+	z-index: -1;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	opacity: 0;
+
+	-webkit-filter: blur(8px);
+	-moz-filter: blur(8px);
+	-o-filter: blur(8px);
+	-ms-filter: blur(8px);
+	filter: blur(8px);
+	transform: scale(1.1);
+
+	-webkit-transition: opacity 1.5s linear;
+	-moz-transition: opacity 1.5s linear;
+	-o-transition: opacity 1.5s linear;
+	-ms-transition: opacity 1.5s linear;
+	transition: opacity 1.5s linear;
+
+	background-image: none;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.page-container {
+	padding-top: 10%;
+	max-width: 800px;
+}
+.main-wrapper {
+	color: #eeeeee;
+	background: #393e46;
+	box-shadow: 0px 0px 10px #0000008a;
+}
+
+.alert {
+	margin-right: calc(-.5 * 1.5rem);
+	margin-left: calc(-.5 * 1.5rem);
+	box-shadow: 0px 0px 10px #00000020;
+}
+
+.side-left {
+	background: #222831;
+}
+.side-left h1 {
+	color: #eeeeee;
+}
+.side-left h2 {
+	color: #4f5560;
+}
+.side-right{
+	background: #393e46;
+}
+.side-right h1 {
+	color: #1a1a1a;
+}
+.content-wrapper {
+	padding: 25px;
+}
+.side-action {
+	text-align: right;
+	line-height: 48px;
+	color: #eeeeee;
+}
+#to-register-btn, #to-login-btn {
+	cursor: pointer;
+}
+.foonote {
+	opacity: 0.5;
+	color: #000000;
+	font-size: 0.6em;
+	text-align: center;
+}
+.foonote a {
+	text-decoration: none;
+}
+.isregister {
+	display: none;
+}
+.user-info {
+	text-align: right;
+	color: #4f5560;
+}
+.user-info a {
+	color: #4f5560;
+}
+#gallery .gallery-item {
+	position: relative;
+}
+#gallery .gallery-item .gallery-cover {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: calc(1.5rem * .5);
+	right: calc(1.5rem * .5);
+	opacity: 0;
+	background-color: #00000088;
+
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	transition: opacity 0.5s linear;
+	cursor: pointer;
+	text-align: right;
+	padding: 10px 15px;
+}
+#gallery .gallery-item .gallery-cover:hover {
+	opacity: 1;
+}
+#gallery .gallery-item img {
+	width: 100%;
+	box-shadow: 0px 0px 10px #0000008a;
+}

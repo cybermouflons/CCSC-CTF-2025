@@ -1,0 +1,32 @@
+name: "The Missing Essence"
+author: "[GramThanos](https://github.com/GramThanos)"
+category: Web
+description: "Voting your favourite image!\n\n\nAuthor: GramThanos"
+
+value: 500
+type: dynamic_docker
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  redirect_type: http
+  compose_stack: !filecontents docker-compose.yml
+
+flags:
+    - ECSC{1__proto__P0lluT3D_My_W4y_in2-tH3_4dm1n}
+
+topics:
+    - Prototype Pollution
+    - Misconfiguration
+    - JavaScript
+    - Node.js
+
+tags:
+    - web
+    - hard
+
+files:
+    - public/web-the-missing-essence.zip
+
+state: hidden
+version: "0.1"
