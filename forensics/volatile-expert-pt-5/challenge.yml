@@ -1,7 +1,7 @@
 name: "Volatile Expert Pt. 5"
 author: "canopus"
 category: forensics
-description: "Forensics tough guy huh let's see how you do...\nPart 5: Consider the process with PID=1554 the flag is `ECSC{stack canary}` (`ECSC{0x00aa..}`) \nDownload: https://next.alpha-carinae.xyz/s/aqTwiX5ya9AsLWg `sha256:ce54b9989cf697210eaed2019162c7b9364694ce812cc35fbcf60d98e5bb66c1`"
+description: "Forensics tough guy huh? Let's see how you do...\nPart 5: What is the Stack Canary of the process of PID=1554 `ECSC{0x00aaaa...}`\n__Notice where the null byte is!__"
 
 value: 100
 type: dynamic
