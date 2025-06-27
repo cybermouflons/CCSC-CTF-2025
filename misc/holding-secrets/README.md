@@ -12,6 +12,9 @@
 A PLC in a galaxy far far away is holding a secret. Find it and you win.
 
 
+Author: k4rt0fl3r
+
+
 ## Run locally
 
 Launch challenge:
