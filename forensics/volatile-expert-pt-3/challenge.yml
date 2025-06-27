@@ -1,7 +1,7 @@
 name: "Volatile Expert Pt. 3"
 author: "canopus"
 category: forensics
-description: "Forensics tough guy huh? Let's see how you do...\n\nPart 3: What is the address of the `__x64_sys_execve` symbol ie: `ECSC{0xaaaa}`\n\n\nAuthor: canopus"
+description: "Forensics tough guy huh? Let's see how you do...\n\nPart 3: What is the (virtual) address of the `__x64_sys_execve` symbol ie: `ECSC{0xaaaa}`\n\n\nAuthor: canopus"
 
 value: 100
 type: dynamic
