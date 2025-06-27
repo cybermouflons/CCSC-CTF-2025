@@ -21,6 +21,7 @@ flags:
 
 tags:
   - reverse
+  - easy
 
 files:
   - "public/rev-just-a-key.zip"
