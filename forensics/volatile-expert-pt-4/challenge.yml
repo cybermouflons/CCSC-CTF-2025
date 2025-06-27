@@ -10,7 +10,6 @@ extra:
   minimum: 50
   decay: 5
 
-
 flags:
   - ECSC{0x64d9c3c0}
 
