@@ -1,7 +1,7 @@
 name: "Cursed Locker"
 author: "canopus"
 category: forensics
-description: "Oh noo, I was accidentally locked outside my brand new __Windows 11__ Box! Please help me...\nUse latest [dislocker](https://github.com/Aorimn/dislocker)\n\nDownload:  https://next.alpha-carinae.xyz/s/GHeeYt8zMiJiX5L `sha256:895859276713362a5a58873f139684a105d44ab237c5053782273b5ffafc16d6`"
+description: "Oh noo, I was accidentally locked outside my brand new __Windows 11__ Box! Please help me...\nUse latest (build from source!) [dislocker](https://github.com/Aorimn/dislocker)\n\nDownload:  https://next.alpha-carinae.xyz/s/GHeeYt8zMiJiX5L `sha256:895859276713362a5a58873f139684a105d44ab237c5053782273b5ffafc16d6`"
 
 value: 500
 type: dynamic
