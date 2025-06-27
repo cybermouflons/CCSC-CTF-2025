@@ -7,7 +7,7 @@ services:
     ports:
       - 1337:1337
     build:
-      context: ./src
+      context: ./setup
       dockerfile: Dockerfile
       labels:
         ctf.challenge.name: gamble-auction
