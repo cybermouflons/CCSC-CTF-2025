@@ -7,7 +7,6 @@
 
 ## Description
 
-Forensics tough guy huh let's see how you do...
-Part 3: `ECSC{&__x64_sys_execve}` (address of the `__x64_sys_execve` symbol) 
-Download: https://next.alpha-carinae.xyz/s/aqTwiX5ya9AsLWg `sha256:ce54b9989cf697210eaed2019162c7b9364694ce812cc35fbcf60d98e5bb66c1`
+Forensics tough guy huh? Let's see how you do...
+Part 3: What is the address of the `__x64_sys_execve` symbol ie: `ECSC{0xaaaa}`
 

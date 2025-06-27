@@ -1,7 +1,7 @@
 name: "Volatile Expert Pt. 1"
 author: "canopus"
 category: forensics
-description: "Forensics tough guy huh let's see how you do...\n\nPart 1, create symbols for the given memory snapshot (Maybe there is a blog online for this... I dunno) The flag is `ECSC{sha256(debug_vmlinux)}`\n\nDownload: https://next.alpha-carinae.xyz/s/aqTwiX5ya9AsLWg `sha256:ce54b9989cf697210eaed2019162c7b9364694ce812cc35fbcf60d98e5bb66c1`\n\n\nAuthor: canopus"
+description: "Forensics tough guy huh? Let's see how you do...\n\nPart 1, create symbols for the given memory snapshot (Maybe there is a blog online for this... I dunno) The flag is `ECSC{sha256(debug_vmlinux)}`\n\nDownload: https://next.alpha-carinae.xyz/s/aqTwiX5ya9AsLWg `sha256:ce54b9989cf697210eaed2019162c7b9364694ce812cc35fbcf60d98e5bb66c1`\n\n\nAuthor: canopus"
 
 value: 100
 type: dynamic
