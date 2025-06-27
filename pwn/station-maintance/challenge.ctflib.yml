@@ -12,7 +12,7 @@ extra:
   docker_image: ctf/pwn:station-maintenace
 
 deploy:
-  docker_challenges: dist/docker-challenge.tar
+  docker_challenges: public/docker-challenge.tar
 
 flags:
   - FLAG{sp4c3_syst3ms_n3v3r_w3r3_s4f3r}

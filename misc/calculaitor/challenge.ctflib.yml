@@ -12,7 +12,7 @@ extra:
   docker_image: ctf/misc:calculaitor
 
 deploy:
-  docker_challenges: dist/docker-challenge.tar
+  docker_challenges: public/docker-challenge.tar
 
 flags:
   - ECSC{pr0mpt_1nj3ct10n_w1n5_AG41N}

@@ -12,7 +12,7 @@ extra:
   docker_image: ctf/misc:date-mcp
 
 deploy:
-  docker_challenges: dist/docker-challenge.tar
+  docker_challenges: public/docker-challenge.tar
 
 flags:
   - ECSC{If_1_c0uLd_TuRn_b4cK_t1m3_I_wOu1d_F1x_Th1s_BuG}

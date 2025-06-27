@@ -12,7 +12,7 @@ extra:
   docker_image: ctf/pwn:log-recorder
 
 deploy:
-  docker_challenges: dist/docker-challenge.tar
+  docker_challenges: public/docker-challenge.tar
 
 flags:
   - FLAG{r3c0rd1ng_sp4c3_m1ss1ons_sh0uld_b3_fun}
