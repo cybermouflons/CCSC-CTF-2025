@@ -25,5 +25,5 @@ tags:
 files:
   - "public/rev-up-for-grubs.zip"
 
-state: hidden
+state: visible
 version: "0.1"

@@ -13,20 +13,20 @@ extra:
   compose_stack: !filecontents docker-compose.yml
 
 flags:
-    - ECSC{1__proto__P0lluT3D_My_W4y_in2-tH3_4dm1n}
+  - ECSC{1__proto__P0lluT3D_My_W4y_in2-tH3_4dm1n}
 
 topics:
-    - Prototype Pollution
-    - Misconfiguration
-    - JavaScript
-    - Node.js
+  - Prototype Pollution
+  - Misconfiguration
+  - JavaScript
+  - Node.js
 
 tags:
-    - web
-    - hard
+  - web
+  - hard
 
 files:
-    - public/web-the-missing-essence.zip
+  - public/web-the-missing-essence.zip
 
-state: hidden
+state: visible
 version: "0.1"

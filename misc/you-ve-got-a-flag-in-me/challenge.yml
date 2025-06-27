@@ -25,5 +25,5 @@ tags:
 files:
   - "public/flag.midi"
 
-state: hidden
+state: visible
 version: "0.1"

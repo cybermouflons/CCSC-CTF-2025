@@ -8,7 +8,6 @@ description: |
 
   Author: kallenosf
 
-
 value: 500
 type: dynamic
 extra:
@@ -26,5 +25,5 @@ tags:
 files:
   - "public/rev-anti-tricks.zip"
 
-state: hidden
+state: visible
 version: "0.1"

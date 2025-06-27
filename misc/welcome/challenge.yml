@@ -1,0 +1,22 @@
+name: "Welcome"
+author: "CCSC Team"
+category: misc
+
+description: |
+  Welcome to Cyprus Cyber Security Challenge
+
+value: 1
+type: dynamic
+extra:
+  initial: 1
+  minimum: 1
+  decay: 0
+
+flags:
+  - ECSC{welcome_to_cyprus_cyber_challenge}
+
+tags:
+  - santity check
+
+state: visible
+version: "0.1"

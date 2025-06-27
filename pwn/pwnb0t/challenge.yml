@@ -19,5 +19,5 @@ tags:
 files:
   - public/pwn-pwnb0t.zip
 
-state: hidden
+state: visible
 version: "0.1"

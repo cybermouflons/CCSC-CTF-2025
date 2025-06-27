@@ -27,5 +27,5 @@ tags:
 files:
   - "public/pwn-shellcode.tar.gz"
 
-state: hidden
+state: visible
 version: "0.1"
