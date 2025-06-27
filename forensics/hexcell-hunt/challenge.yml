@@ -17,6 +17,9 @@ topics:
   - Windows
   - Registry Forensics
 
+files:
+  - "public/forensics_hexcell_hunt.zip"
+
 tags:
   - easy
   - forensics
