@@ -1,0 +1,26 @@
+name: "Asteromata"
+author: "Rasti"
+category: crypto
+description: "Your typical RSA CTF challenge. Have fun:)\n\n\nAuthor: Rasti"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 50
+  decay: 25
+
+flags:
+  - ECSC{wh4t_1f_e_w4s_much_l4rg3r?!}
+
+topics:
+  - RSA
+
+tags:
+  - crypto
+
+files:
+  - public/crypto-asteromata.zip
+
+state: hidden
+version: "0.1"
