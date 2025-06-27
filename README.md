@@ -87,13 +87,6 @@ Although some of the challenges may run as is, it is recommended that you have d
 | [Memes](./web/memes) | [GramThanos](https://github.com/GramThanos) |
 | [Popcorn and Payloads](./web/popcorn) | [kallenosf](https://github.com/kallenosf) |
 | [Remote Control](./web/remote-control) | [GramThanos](https://github.com/GramThanos) |
-
-
-
-### Web
-
-| Name | Author |
-| ---- | ------ |
 | [The Missing Essence](./web/the-missing-essence) | [GramThanos](https://github.com/GramThanos) |
 
 
