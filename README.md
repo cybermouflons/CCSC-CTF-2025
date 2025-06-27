@@ -88,3 +88,11 @@ Although some of the challenges may run as is, it is recommended that you have d
 | [Remote Control](./web/remote-control) | [GramThanos](https://github.com/GramThanos) |
 
 
+
+### Web
+
+| Name | Author |
+| ---- | ------ |
+| [The Missing Essence](./web/the-missing-essence) | [GramThanos](https://github.com/GramThanos) |
+
+
