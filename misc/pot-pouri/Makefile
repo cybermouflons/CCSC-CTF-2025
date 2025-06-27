@@ -1,4 +1,5 @@
 default: print
+	mkdir -p public
 	tar cvf public/docker-challenge.tar -C setup challenge Dockerfile
 	@echo Challenge compiled.
 

@@ -1,7 +1,7 @@
 name: "pwnb0t"
 author: "[r3dsh3rl0ck](https://github.com/R3dSh3rl0ck)"
 category: pwn
-description: "-\n\n\nAuthor: r3dsh3rl0ck"
+description: "No description.\n\n\nAuthor: r3dsh3rl0ck"
 
 value: 500
 type: docker-dynamic
