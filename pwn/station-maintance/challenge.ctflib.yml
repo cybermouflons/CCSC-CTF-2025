@@ -15,7 +15,7 @@ deploy:
   docker_challenges: public/docker-challenge.tar
 
 flags:
-  - FLAG{sp4c3_syst3ms_n3v3r_w3r3_s4f3r}
+  - ECSC{sp4c3_syst3ms_n3v3r_w3r3_s4f3r}
 
 tags:
   - easy

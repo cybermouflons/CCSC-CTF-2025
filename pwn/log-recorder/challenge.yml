@@ -13,7 +13,7 @@ extra:
   compose_stack: !filecontents docker-compose.yml
 
 flags:
-  - FLAG{r3c0rd1ng_sp4c3_m1ss1ons_sh0uld_b3_fun}
+  - ECSC{r3c0rd1ng_sp4c3_m1ss1ons_sh0uld_b3_fun}
 
 tags:
   - pwn
