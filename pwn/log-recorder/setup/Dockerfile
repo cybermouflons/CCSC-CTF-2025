@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y socat && apt-get install -y iputils-pin
 RUN mkdir -p /opt/app
 COPY app/ /opt/app/
 WORKDIR /opt/app
+RUN chmod +x ./log-recorder
 RUN chmod +x ./start.sh
 RUN chmod a+r ./flag.txt
 
