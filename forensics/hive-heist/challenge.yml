@@ -1,7 +1,7 @@
 name: "Hive Heist"
 author: "_dark_darkl0rd_"
 category: forensics
-description: "A partial registry hive has been recovered from a suspect's machine. You are tasked to retrieve the answers to the suspect's Windows password security questions."
+description: "A partial registry hive has been recovered from a suspect's machine. You are tasked to retrieve the answers to the suspect's Windows password security questions.\nFormat: `ECSC{A1:A2:A3}`"
 
 value: 500
 type: dynamic
@@ -16,6 +16,9 @@ flags:
 topics:
   - Registry Forensics
   - Windows
+
+files:
+  - "public/forensics_hive_heist.zip"
 
 tags:
   - easy
