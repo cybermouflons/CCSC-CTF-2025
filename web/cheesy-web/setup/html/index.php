@@ -1,7 +1,7 @@
 <?php
 
 $nonce = bin2hex(openssl_random_pseudo_bytes(32));
-header("Content-Security-Policy: default-src 'none';script-src '$nonce';");
+header("Content-Security-Policy: default-src 'none';script-src 'nonce-$nonce';");
 if (isset($_GET["xss"])){
 
 ?>
