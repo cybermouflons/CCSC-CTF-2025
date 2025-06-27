@@ -16,6 +16,9 @@ tags:
   - pwn
   - medium
 
+flags:
+  - ECSC{Y0ur_d0ubbl3_fr33_fu_1s_str0ng_f0r_3xpl01t4t1on}
+
 files:
   - public/pwn-pwnb0t.zip
 
