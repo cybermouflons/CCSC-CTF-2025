@@ -23,5 +23,5 @@ tags:
 files:
   - dist/crypto-the-truth.zip
 
-state: hidden
+state: visible
 version: "0.1"

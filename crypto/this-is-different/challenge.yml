@@ -22,5 +22,5 @@ tags:
 files:
   - dist/crypto-this-is-different.zip
 
-state: hidden
+state: visible
 version: "0.1"
