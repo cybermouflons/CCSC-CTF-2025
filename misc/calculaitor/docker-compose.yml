@@ -8,7 +8,7 @@ services:
       - 1337:8000
     environment:
       #- AI_SERVER_URL=https://generativelanguage.googleapis.com/v1beta/openai/
-      - AI_SERVER_API_KEY=AIzaSyClvXhBjw8TU3e-oaIHhnc3Z5Zq2dl5EcY
+      - AI_SERVER_API_KEY=AIzaSyBFNiKjIbafFXxeYYLfxF0A7JNH20-xB7w,AIzaSyA4WhyYL-jSn_qEG8k8P0ZBgEodnGG3kAc
       #- AI_SERVER_MODEL=models/gemini-2.0-flash
     build:
       context: ./setup
