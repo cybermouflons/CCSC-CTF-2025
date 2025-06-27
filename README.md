@@ -51,6 +51,7 @@ Although some of the challenges may run as is, it is recommended that you have d
 | [Date MCP](./misc/date-mcp) | [GramThanos](https://github.com/GramThanos) |
 | [Holding Secrets](./misc/holding-secrets) | k4rt0fl3r |
 | [Pot Pouri](./misc/pot-pouri) | wizard_alfredo |
+| [Welcome](./misc/welcome) | CCSC Team |
 | [You've got a flag in me](./misc/you-ve-got-a-flag-in-me) | tratrafe2 |
 
 
