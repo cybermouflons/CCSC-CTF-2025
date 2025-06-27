@@ -21,6 +21,7 @@ Although some of the challenges may run as is, it is recommended that you have d
 | Name | Author |
 | ---- | ------ |
 | [Asteromata](./crypto/asteromata) | Rasti |
+| [Gamble Auction](./crypto/gamble-auction) | [Gramthanos](https://github.com/gramthanos) & Rasty |
 | [The Truth](./crypto/the-truth) | [GramThanos](https://github.com/GramThanos) |
 | [This is different](./crypto/this-is-different) | [P3taByte](https://x.com/0xp374) © [Zer0Tolerance](https://x.com/0tolerance_ctf) |
 
