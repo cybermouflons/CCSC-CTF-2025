@@ -35,18 +35,17 @@
 					<small>{{ message }}</small>
 				</div>
 			</div>
-			<div class="foonote">Images from <a href="https://unsplash.com/">unsplash.com</a></small></div>
+			<div class="foonote">Images from <a href="https://picsum.photos/">picsum.photos</a></small></div>
 		</div>
 		<script type="text/javascript" src="../static/js/jquery-3.6.0.slim.min.js"></script>
 		<!--<script type="text/javascript" src="../static/js/login.js"></script>-->
 		<script type="text/javascript">
 			$(function() {
-				let topic = ['technology', 'animal', 'abstruct', 'sky'];
 				for (let i = 0; i < 4; i++) {
 					$('#gallery').append('\
 						<div class="col-6 mt-3 mb-3 gallery-item">\
 							<div class="gallery-cover">' + ((min, max) => min + Math.floor(Math.random() * (max - min)))(1, 1000) + ' Votes</div>\
-							<img src="https://source.unsplash.com/random/480x270/?' + topic[i] + '"/>\
+							<img src="https://picsum.photos/480/270/"/>\
 						</div>\
 					');
 				}

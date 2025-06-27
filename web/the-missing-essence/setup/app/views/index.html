@@ -48,14 +48,14 @@
 			<div id="alert-msg" class="alert alert-warning mt-3" style="display: none;" role="alert">
 				No message.
 			</div>
-			<div class="foonote mt-3">Background image from <a href="https://unsplash.com/">unsplash.com</a></small></div>
+			<div class="foonote mt-3">Background image from <a href="https://picsum.photos/">picsum.photos</a></small></div>
 		</div>
 		<script type="text/javascript" src="../static/js/jquery-3.6.0.slim.min.js"></script>
 		<script type="text/javascript" src="../static/js/login.js"></script>
 		<script type="text/javascript">
 			$(function() {
 				let img = new Image();
-				img.src = 'https://source.unsplash.com/random/960x540/?view';
+				img.src = 'https://picsum.photos/960/540';
 				img.onload = function() {
 					$('.bg-image').css({
 						'background-image': 'url("' + img.src + '")',
