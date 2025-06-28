@@ -1,0 +1,26 @@
+name: "This is different - Revenge"
+author: "[P3taByte](https://x.com/0xp374) © [Zer0Tolerance](https://x.com/0tolerance_ctf)"
+category: crypto
+description: "My debug skills let me down. This is the real deal.\n\n\n*P3taByte © Zer0Tolerance*"
+
+value: 500
+type: dynamic_docker
+extra:
+  initial: 500
+  decay: 25
+  minimum: 100
+  redirect_type: direct
+  compose_stack: !filecontents docker-compose.yml
+
+flags:
+  - ECSC{y0u_4r3_7h3_l0rd_0f_c0d3_br34k1n9}
+
+tags:
+  - crypto
+  - hard
+
+files:
+  - dist/crypto-this-is-different-revenge.zip
+
+state: visible
+version: "0.1"
