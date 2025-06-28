@@ -1,7 +1,7 @@
 name: "Gamble Auction"
-author: "[Gramthanos](https://github.com/gramthanos) & Rasty"
+author: "[Gramthanos](https://github.com/gramthanos) & rasti"
 category: crypto
-description: "Time to gamble a bit!\n\n\nAuthors: Gramthanos & Rasty"
+description: "Time to gamble a bit!\n\n\nAuthors: Gramthanos & rasti"
 
 value: 500
 type: dynamic_docker

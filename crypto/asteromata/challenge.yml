@@ -1,7 +1,7 @@
 name: "Asteromata"
-author: "Rasti"
+author: "rasti"
 category: crypto
-description: "Your typical RSA CTF challenge. Have fun:)\n\n\nAuthor: Rasti"
+description: "Your typical RSA CTF challenge. Have fun:)\n\n\nAuthor: rasti"
 
 value: 500
 type: dynamic
