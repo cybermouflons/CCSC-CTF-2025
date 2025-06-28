@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= user.username %> – Profile</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <div class="navbar">
+    <a href="/movies">Home</a>
+    <a href="/profile">Profile</a>
+  </div>
+
+  <h1 style="text-align: center;">User Profile</h1>
+
+  <div style="max-width: 500px; margin: 20px auto; padding: 20px; border: 2px solid #005f96; border-radius: 10px; background-color: #bebaba; color: #333;">
+    <p><strong>Username:</strong> <%= user.username %></p>
+    <p><strong>User ID:</strong> <%= user.id %></p>
+  </div>
+
+  <h2 style="text-align: center;">Your API keys</h2>
+
+  <div style="max-width: 500px; margin: 20px auto; padding: 20px; border: 2px solid #005f96; border-radius: 10px; background-color: #bebaba; color: #333;">
+    <% if (apikey != "") { %>
+        <p><strong>API key: </strong><%= apikey %></p>
+        <p><strong>API documentation: </strong>/api</p>
+    <% } else { %>
+        <p>🚫 You don't have access to any API keys.</p>
+    <% } %>
+  </div>
+
+  <% if (user?.username === "admin") { %>
+    <h2 style="text-align: center;">Admin Panel</h2>
+    <div style="max-width: 500px; margin: 20px auto; padding: 20px; border: 3px solid #b60202; border-radius: 10px; background-color: #bebaba; color: #333;">
+      <h3 style="text-align: center;">Reveal flag</h3>
+      <button onclick="getFlag()" style="padding: 0.5rem 1rem;">Get Flag</button>
+    </div>
+  
+    <script>
+      async function getFlag() {
+        try {
+          const res = await fetch("/admin", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            }
+          });
+  
+          const data = await res.json();
+          alert("Flag: " + data.flag);
+        } catch (err) {
+          alert("Failed to get flag");
+        }
+      }
+    </script>
+  <% } %>
+
+  <h2 style="text-align: center;">Your Movie Reviews</h2>
+
+  <ul style="list-style-type: none; padding: 0; max-width: 600px; margin: 0 auto; color: #333;">
+    <% if (reviews.length === 0) { %>
+      <li style="text-align: center;">You haven't submitted any reviews yet.</li>
+    <% } else { %>
+      <% reviews.forEach(function(r) { %>
+        <li style="margin-bottom: 15px; border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+          <strong><%= r.movie_title %></strong><br/>
+          <span><%= r.review %></span>
+        </li>
+      <% }); %>
+    <% } %>
+  </ul>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <form method="POST" action="/logout">
+      <button type="submit">Logout</button>
+    </form>
+  </div>
+
+  <footer style="text-align: center; padding: 20px; color: #242323; font-size: 14px;">
+    &copy; CYberMouflons 2025
+  </footer>
+
+</body>
+</html>

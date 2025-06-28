@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>API Documentation - Movie Review Service</title>
+  <link rel="stylesheet" href="/static/css/styles.css" />
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .endpoint {
+      border: 1px solid #ddd;
+      padding: 1.25rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      background-color: #c4e1f1;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .endpoint-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+  }
+
+    .endpoint-header h2 {
+      margin: 0;
+      font-size: 1.1rem;
+      word-break: break-all;
+      font-family: monospace;
+    }
+
+    .method {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+
+    .method.GET { background-color: #28a745; }
+    .method.POST { background-color: #007bff; }
+    .method.PUT { background-color: #ffc107; color: #000; }
+    .method.DELETE { background-color: #dc3545; }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 0.8rem;
+    }
+
+    summary:hover {
+      text-decoration: underline;
+    }
+
+    pre {
+      background-color: #f4f4f4;
+      padding: 0.75rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #3d3d3d;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="/movies">Home</a>
+    <a href="/profile">Profile</a>
+  </div>
+
+  <div class="container">
+    <h1>API Documentation</h1>
+
+    <div class="endpoint">
+      <p>Send you API key inside <strong>x-api-key</strong> HTTP header.</p>
+      <p>x-api-key: &lt;your_api_key&gt;</p>
+    </div>
+
+    <p>These are the available API endpoints for interacting with the Movie Review application.</p>
+
+    <div class="endpoint">
+      <div class="endpoint-header">
+        <span class="method POST">POST</span>
+        <h2>/api/login</h2>
+      </div>
+      <p>Authenticate a user and return user details.</p>
+      <details>
+        <summary>Example Request Body</summary>
+        <pre>{
+  "username": "admin",
+  "password": "secret"
+}</pre>
+      </details>
+      <details>
+        <summary>Example Response</summary>
+        <pre>{
+  "id": 1,
+  "username": "admin",
+  "password": ""
+}</pre>
+      </details>
+    </div>
+
+    <div class="endpoint">
+      <div class="endpoint-header">
+        <span class="method POST">POST</span>
+        <h2>/api/register</h2>
+      </div>
+      <p>Register a new user.</p>
+      <details>
+        <summary>Example Request Body</summary>
+        <pre>{
+  "username": "newuser",
+  "password": "newpassword"
+}</pre>
+      </details>
+      <details>
+        <summary>Example Response</summary>
+        <pre>{
+  "message": "User registered successfully!",
+  "success": true
+}</pre>
+      </details>
+    </div>
+
+    <div class="endpoint">
+      <div class="endpoint-header">
+        <span class="method GET">GET</span>
+        <h2>/api/movies</h2>
+      </div>
+      <p>Returns a list of available movies (id, title, image).</p>
+      <details>
+        <summary>Example Response</summary>
+        <pre>{
+  "movies": [
+    { "id": 1, "title": "Inception", "image": "/static/images/inception.jpg" }
+  ]
+}</pre>
+      </details>
+    </div>
+
+    <div class="endpoint">
+        <div class="endpoint-header">
+          <span class="method GET">GET</span>
+          <h2>/api/movies/:id</h2>
+        </div>
+      <p>Get full movie data and reviews.</p>
+      <details>
+        <summary>Example Response</summary>
+        <pre>{
+  "movie": {
+    "id": 1,
+    "title": "Inception",
+    "description": "...",
+    "trailer": "...",
+    "image": "..."
+  },
+  "reviews": [
+    { "username": "user1", "review": "Great movie!" }
+  ]
+}</pre>
+      </details>
+    </div>
+
+    <div class="endpoint">
+      <div class="endpoint-header">
+        <span class="method POST">POST</span>
+        <h2>/api/movies/:id/review</h2>
+      </div>
+      <p>Submit a new review for a movie.</p>
+      <details>
+        <summary>Example Request Body</summary>
+        <pre>{
+  "review": "Loved it!",
+  "userID": 3
+}</pre>
+      </details>
+      <details>
+        <summary>Example Response</summary>
+        <pre>{
+  "message": "Review added"
+}</pre>
+      </details>
+    </div>
+
+    <div class="endpoint">
+      <div class="endpoint-header">
+        <span class="method POST">POST</span>
+        <h2>/api/movies</h2>
+      </div>
+      <p>Add a new movie entry.</p>
+      <details>
+        <summary>Example Request Body</summary>
+        <pre>{
+  "title": "New Movie",
+  "image": "https://example.com/image.jpg",
+  "trailer": "https://youtube.com/embed/xyz",
+  "description": "A brand new movie."
+}</pre>
+      </details>
+      <details>
+        <summary>Example Response</summary>
+        <pre>{
+  "message": "Movie added"
+}</pre>
+      </details>
+    </div>
+
+    <div class="endpoint">
+      <div class="endpoint-header">
+        <span class="method GET">GET</span>
+        <h2>/users/:id/reviews</h2>
+      </div>
+    <p>Get all reviews of a user.</p>
+    <details>
+      <summary>Example Response</summary>
+      <pre>{
+  "reviews":[
+    {
+      "review":"Amazing soundtrack and storytelling.",
+      "movie_title":"Interstellar"
+    },
+    {
+      "review":"Heath Ledger stole the show!",
+      "movie_title":"The Dark Knight"
+    }
+  ]
+}</pre>
+    </details>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; CYberMouflons 2025
+  </footer>
+</body>
+</html>

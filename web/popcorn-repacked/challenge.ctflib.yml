@@ -1,0 +1,43 @@
+name: "Popcorn and Payloads (Repacked)"
+author: "[kallenosf](https://github.com/kallenosf)"
+category: web
+description: "Lights, camera, action! Can you see behind the scenes?\n\nNote: Admins/Moderators access the app using http://127.0.0.1/\n\n\n(The challenge was repacked so that is deploys into a personal instance)\n\nAuthor: kallenosf"
+
+value: 500
+type: docker-dynamic
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  docker_image: ctf/web:popcorn-repacked
+
+deploy:
+  docker_challenges: public/docker-challenge.tar
+
+flags:
+  - ECSC{L1gHtS_C4meRa_D3c3pTi0n...I_Me4N_AC7ioN}
+  - {
+    type: "docker-environment-variable",
+    content: "flag",
+    data: "ECSC{L1gHtS_C4meRa_D3c3pTi0n...I_Me4N_AC7ioN}",
+  }
+  - {
+    type: "docker-environment-variable",
+    content: "ADMIN_USERNAME",
+    data: "admin",
+  }
+  - {
+    type: "docker-environment-variable",
+    content: "ADMIN_PASSWORD",
+    data: "F6vF0Q3OXZbK5QZOSBlDzGU1LTn6ieol",
+  }
+
+topics:
+  - nop
+
+tags:
+  - web
+  - easy
+
+state: hidden
+version: "0.1"

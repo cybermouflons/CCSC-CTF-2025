@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    restart: always
+    build: ./setup/
+    environment:
+      - flag=ECSC{L1gHtS_C4meRa_D3c3pTi0n...I_Me4N_AC7ioN}
+      - ADMIN_USERNAME=admin
+      - ADMIN_PASSWORD=F6vF0Q3OXZbK5QZOSBlDzGU1LTn6ieol
+      - BASE_URL=http://web-app
+    ports:
+      - 1111:80

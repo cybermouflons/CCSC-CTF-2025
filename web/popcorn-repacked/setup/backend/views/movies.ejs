@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Reviews</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+    <!-- Top Navbar -->
+    <div class="navbar">
+        <a href="/movies">Home</a>
+        <a href="/profile">Profile</a>
+    </div>
+
+    <h1>Welcome to Movie Reviews</h1>
+
+    <p style="text-align: center; font-size: 16px; color: #383838; margin-top: -10px;">
+        Click a movie to read reviews or leave your own.
+    </p>
+
+    <div class="movies">
+        <% movies.forEach(function(movie) { %>
+            <a class="movie-link" href="/movies/<%= movie.id %>">
+                <div class="movie-card">
+                    <div class="movie-title"><%= movie.title %></div>
+                    <img src="<%- movie.image %>" alt="<%= movie.title %> poster">
+                </div>
+            </a>
+        <% }) %>
+    </div>
+    <footer style="text-align: center; padding: 20px; color: #242323; font-size: 14px;">
+        &copy; CYberMouflons 2025
+    </footer>
+</body>
+</html>

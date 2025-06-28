@@ -1,0 +1,13 @@
+{
+  "name": "admin-bot",
+  "version": "1.0.0",
+  "description": "Automated admin bot for testing the movie review site",
+  "main": "admin-bot.js",
+  "type": "module",
+  "scripts": {
+    "start": "node admin-bot.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}
