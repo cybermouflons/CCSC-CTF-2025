@@ -11,7 +11,7 @@ extra:
   decay: 5
 
 flags:
-  - ECSC{e21677d099a97ab06575248f5ad000bd7f0fbf10}
+  - ECSC{4ba1e2c98c299bd46567653eed574a1cf69409dc}
 
 topics:
   - Volatility
