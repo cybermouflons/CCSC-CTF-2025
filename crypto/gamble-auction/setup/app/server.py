@@ -85,7 +85,7 @@ def main():
 					continue
 				items[idx] = crypto.add(items[idx], amt_ct)
 				block_double_guess[idx] = False
-				print_flush(f"💰 Bid of {amt} placed on item {idx}.\n")
+				print_flush(f"💰 Bid of {amt_ct} placed on item {idx}.\n")
 
 			elif cmd == "retract" and len(args) == 2:
 				idx = int(args[1])
