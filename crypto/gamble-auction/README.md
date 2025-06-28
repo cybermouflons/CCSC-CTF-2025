@@ -5,14 +5,14 @@
 
 **Category**: crypto
 
-**Author**: [Gramthanos](https://github.com/gramthanos) & Rasty
+**Author**: [Gramthanos](https://github.com/gramthanos) & rasti
 
 ## Description
 
 Time to gamble a bit!
 
 
-Authors: Gramthanos & Rasty
+Authors: Gramthanos & rasti
 
 
 ## Run locally

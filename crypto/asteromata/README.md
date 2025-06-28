@@ -3,12 +3,12 @@
 
 **Category**: crypto
 
-**Author**: Rasti
+**Author**: rasti
 
 ## Description
 
 Your typical RSA CTF challenge. Have fun:)
 
 
-Author: Rasti
+Author: rasti
 
