@@ -15,7 +15,7 @@ deploy:
   docker_challenges: dist/docker-challenge.tar
 
 flags:
-  - ECSC{y0u_4r3_7h3_l0rd_0f_c0d3_br34k1n9}
+  - ECSC{y0u_4r3_7h3_k1ng_0f_h4ck1n9_sk1llz}
 
 topics:
   - DES
