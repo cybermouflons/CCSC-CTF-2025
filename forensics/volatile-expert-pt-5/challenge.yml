@@ -1,7 +1,7 @@
 name: "Volatile Expert Pt. 5"
 author: "canopus"
 category: forensics
-description: "Forensics tough guy huh? Let's see how you do...\n\nPart 5: What is the Stack Canary of the process of PID=1554 `ECSC{0x00aaaa...}`\n__Notice where the null byte is!__\n\n\nAuthor: canopus"
+description: "Forensics tough guy huh? Let's see how you do...\n\nPart 5: What is the Stack Canary of the process of PID=1554 __in kernel space__, __not__ in the TLS (Thread Local Storage) `ECSC{0x00aaaa...}`\n__Notice where the null byte is!__\n\n\nAuthor: canopus"
 
 value: 100
 type: dynamic
