@@ -1,7 +1,7 @@
 name: "Disorder"
 author: "rok0s"
 category: misc
-description: "“Twist Python’s VM to your will and you may find your way out!.”"
+description: "Twist Python’s VM to your will and you may find your way out!."
 
 value: 500
 type: dynamic_docker
