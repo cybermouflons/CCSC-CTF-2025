@@ -9,7 +9,7 @@
 
 ## Description
 
-“Twist Python’s VM to your will and you may find your way out!.”
+Twist Python’s VM to your will and you may find your way out!.
 
 
 ## Run locally
