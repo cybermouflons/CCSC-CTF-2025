@@ -8,7 +8,6 @@ import aes
 _print, _eval, _len = print, eval, len
 
 flag_path = Path(os.environ.get("FLAG_PATH"))
-# flag_path = Path("flag.txt")
 flag = flag_path.read_bytes().rstrip()
 flag_path.unlink(missing_ok=True)
 
