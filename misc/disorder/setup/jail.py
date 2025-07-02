@@ -37,7 +37,7 @@ _ = Context(ct=encrypted, aes=crypto)
 
 
 def is_valid(bytecode):
-    if _len(bytecode) > 50:
+    if _len(bytecode) > 66:
         return False
     return True
 
