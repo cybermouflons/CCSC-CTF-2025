@@ -1,0 +1,27 @@
+name: "Disorder"
+author: "rok0s"
+category: misc
+description: "“Twist Python’s VM to your will and you may find your way out!.”"
+
+value: 500
+type: dynamic_docker
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  redirect_type: direct
+  compose_stack: !filecontents docker-compose.yml
+
+flags:
+  - ECSC{4Bu51ng_PytH0n_VM_1s_aLw4y$_fun!!!!!!!}
+
+tags:
+  - misc
+  - pyjail
+  - medium
+
+files:
+  - "public/misc-disorder.zip"
+
+state: hidden
+version: "0.1"
