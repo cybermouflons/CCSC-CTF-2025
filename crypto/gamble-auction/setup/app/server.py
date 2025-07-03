@@ -93,7 +93,7 @@ def main():
 					print_flush("❌ Invalid item ID\n")
 					continue
 				items[idx] = items_initial_val[idx]
-				guess_streak[i] = 0
+				guess_streak[idx] = 0
 				block_double_guess[idx] = False
 				print_flush(f"🧾 Item {idx}'s price was reset'.\n")
 
