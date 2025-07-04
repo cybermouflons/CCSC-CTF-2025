@@ -1,0 +1,17 @@
+services:
+  challenge:
+    image: ghcr.io/cybermouflons/ccsc2025/gatekeeper:latest
+    restart: always
+    ports:
+      - 1337:1337
+      - 8545:8545
+    environment:
+      - FLAG=ECSC{Sm4rt_c0nTr4ct_r3veSs1Ng_f0R_4_cHaNg3_!_!_!} \
+      - RPC_PORT=8545
+      - CHECK_PORT=1337
+      - CHAIN_ID=1337
+    build:
+      context: ./setup
+      dockerfile: Dockerfile
+      labels:
+        ctf.challenge.name: gatekeeper

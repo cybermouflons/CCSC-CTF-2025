@@ -1,0 +1,19 @@
+[profile.default]
+src              = "src"
+test             = "test"
+script           = "script"
+out              = "out"
+libs             = ["lib"]
+auto_detect_solc = false
+solc_version     = "0.8.24"
+evmergs          = false
+optimizer        = true
+optimizer_runs   = 20_000
+ff_extra_solc_args = ["--via-ir"]          # shrinks proxy to 42 bytes
+
+[profile.fork]
+# When running tests, Foundry will use the URL below unless overridden via env.
+url = "${ETH_RPC_URL}"
+
+[fmt]
+line_length = 100

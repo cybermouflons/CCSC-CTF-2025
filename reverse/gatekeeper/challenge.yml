@@ -1,0 +1,30 @@
+name: "Gatekeeper"
+author: "rok0s"
+category: reverse
+description: |
+  Think you sharp enough to slip past every gate and claim the secrets they swore none could reach?
+
+  Important note: One of the endpoints below is the node RPC endpoint!
+
+value: 500
+type: dynamic_docker
+extra:
+  initial: 500
+  minimum: 100
+  decay: 50
+  redirect_type: direct
+  compose_stack: !filecontents docker-compose.yml
+
+flags:
+  - ECSC{Sm4rt_c0nTr4ct_r3veSs1Ng_f0R_4_cHaNg3_!_!_!}
+
+tags:
+  - reverse
+  - blockchain
+  - hard
+
+files:
+  - "public/rev-gatekeeper.zip"
+
+state: hidden
+version: "0.1"
