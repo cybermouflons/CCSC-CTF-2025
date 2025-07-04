@@ -77,6 +77,7 @@ Although some of the challenges may run as is, it is recommended that you have d
 | Name | Author |
 | ---- | ------ |
 | [Anti-tricks](./reverse/anti-tricks) | [kallenosf](https://github.com/kallenosf) |
+| [Gatekeeper](./reverse/gatekeeper) | rok0s |
 | [Just a Key](./reverse/just-a-key) | [GramThanos](https://github.com/GramThanos) |
 | [Up for GRUBs](./reverse/up-for-grub) | canopus |
 
