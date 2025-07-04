@@ -47,6 +47,8 @@ fi
 
 echo "[*] Deploying Gatekeeper …"
 cd gatekeeper-foundry && \
+    git init && \
+    forge install foundry-rs/forge-std && \
     forge script script/Deploy.s.sol:Deploy --broadcast --rpc-url ${RPC_URL} --silent
 
 

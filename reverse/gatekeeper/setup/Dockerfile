@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y curl bash git ca-certificates \
 
 FROM debian:bookworm-slim
 
-RUN apt-get update && apt-get install -y python3 python3-pip socat curl jq
+RUN apt-get update && apt-get install -y python3 python3-pip socat curl jq git
 
 COPY --from=foundry-build /root/.foundry/bin /usr/local/bin
 
