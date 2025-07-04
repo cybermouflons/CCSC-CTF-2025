@@ -9,7 +9,7 @@
 
 ## Description
 
-Think you sharp enough to slip past every gate and claim the secrets they swore none could reach?
+Think you're sharp enough to slip past every gate and claim the secrets they swore none could reach?
 
 Important note: One of the endpoints below is the node RPC endpoint!
 
