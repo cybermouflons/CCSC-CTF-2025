@@ -25,7 +25,7 @@ If you believe yourself chosen, type `flag` and perhaps the truth shall unveil i
 The winning condition is making the contract function `success()` to return `true`.
 
 """
-RPC = f"http://127.0.0.1:{os.getenv('RPC_PORT','8545')}"
+RPC = f"http://127.0.0.1:{os.getenv('RPC_PORT_INTERNAL','8545')}"
 PK = os.getenv("PLAYER_PK")
 FLAG = os.getenv("FLAG")
 

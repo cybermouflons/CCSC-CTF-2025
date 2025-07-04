@@ -16,7 +16,7 @@ export PRIVATE_KEY=$DEPLOYER_KEY
 echo "[*] Launching Anvil …"
 anvil \
     --host 0.0.0.0                   \
-    --port ${RPC_PORT}               \
+    --port ${RPC_PORT_INTERNAL}               \
     --mnemonic "$MNEMONIC"          \
     --accounts 2                     \
     --chain-id ${CHAIN_ID}                 \
@@ -25,7 +25,7 @@ anvil \
 
 ANVIL_PID=$!
 
-RPC_URL="http://127.0.0.1:${RPC_PORT}"
+RPC_URL="http://127.0.0.1:${RPC_PORT_INTERNAL}"
 export ETH_RPC_URL=${RPC_URL}
 
 echo "[*] Waiting for Anvil JSON-RPC at ${RPC_URL} …"
@@ -51,14 +51,18 @@ cd gatekeeper-foundry && \
     forge install foundry-rs/forge-std && \
     forge script script/Deploy.s.sol:Deploy --broadcast --rpc-url ${RPC_URL} --silent
 
-
 PROXY_ADDR=$(jq -r '.transactions[] | select(.contractName == "Proxy") | .contractAddress' ~/gatekeeper-foundry/broadcast/Deploy.s.sol/${CHAIN_ID}/run-latest.json)
 if [ -z "$PROXY_ADDR" ]; then
     echo "[!] Could not find Proxy contract address in $DEPLOY_JSON"
     exit 1
 fi
+cd .. && rm -r gatekeeper-foundry
 echo "$PROXY_ADDR" > ./proxy.addr
 echo "[✓] Proxy deployed at $PROXY_ADDR"
+
+echo "[*] Reverse-proxy on :${RPC_PROXY_PORT}"
+# gunicorn for proxy, socat for checker (optional)
+gunicorn -b 0.0.0.0:${RPC_PROXY_PORT} rpc_proxy:app  &
 
 echo "[*] Starting checker on ${CHECK_PORT}"
 exec socat TCP-LISTEN:${CHECK_PORT},reuseaddr,fork EXEC:"/home/ctf/checker.py",stderr
