@@ -23,8 +23,5 @@ tags:
   - blockchain
   - hard
 
-files:
-  - "public/rev-gatekeeper.zip"
-
 state: hidden
 version: "0.1"
