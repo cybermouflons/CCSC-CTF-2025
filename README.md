@@ -49,6 +49,7 @@ Although some of the challenges may run as is, it is recommended that you have d
 
 | Name | Author |
 | ---- | ------ |
+| [Blackjack](./misc/blackjack) | [GramThanos](https://github.com/GramThanos) |
 | [CalculAItor](./misc/calculaitor) | [GramThanos](https://github.com/GramThanos) |
 | [Date MCP](./misc/date-mcp) | [GramThanos](https://github.com/GramThanos) |
 | [Disorder](./misc/disorder) | rok0s |
@@ -92,6 +93,7 @@ Although some of the challenges may run as is, it is recommended that you have d
 | [Popcorn and Payloads](./web/popcorn) | [kallenosf](https://github.com/kallenosf) |
 | [Popcorn and Payloads (Repacked)](./web/popcorn-repacked) | [kallenosf](https://github.com/kallenosf) |
 | [Remote Control](./web/remote-control) | [GramThanos](https://github.com/GramThanos) |
+| [Remote Control - Revenge](./web/remote-control-revenge) | [GramThanos](https://github.com/GramThanos) |
 | [The Missing Essence](./web/the-missing-essence) | [GramThanos](https://github.com/GramThanos) |
 
 
