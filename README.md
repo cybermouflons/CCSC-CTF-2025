@@ -53,6 +53,7 @@ Although some of the challenges may run as is, it is recommended that you have d
 | [CalculAItor](./misc/calculaitor) | [GramThanos](https://github.com/GramThanos) |
 | [Date MCP](./misc/date-mcp) | [GramThanos](https://github.com/GramThanos) |
 | [Disorder](./misc/disorder) | rok0s |
+| [High-Low](./misc/high-low) | [GramThanos](https://github.com/GramThanos) |
 | [Holding Secrets](./misc/holding-secrets) | k4rt0fl3r |
 | [Pot Pouri](./misc/pot-pouri) | wizard_alfredo |
 | [Welcome](./misc/welcome) | CCSC Team |
