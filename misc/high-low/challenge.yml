@@ -1,0 +1,30 @@
+name: "High-Low"
+author: "[GramThanos](https://github.com/GramThanos)"
+category: misc
+description: "Time to play a high-low guessing game!\n\n\nAuthor: GramThanos"
+
+value: 500
+type: dynamic_docker
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  redirect_type: http
+  compose_stack: !filecontents docker-compose.yml
+
+flags:
+  - ECSC{cR4zy-crAZy-I-g0t-A-w1nD0W5-H4cK1ng-fRENzY!}
+
+topics:
+  - Python 2
+  - Windows
+
+tags:
+  - misc
+  - easy
+
+files:
+  - public/misc-high-low.zip
+
+state: hidden
+version: "0.1"
