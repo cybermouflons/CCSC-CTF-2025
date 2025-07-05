@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Blackjack</title>
+		<link rel="icon" type="image/x-icon" href="static/favicon.ico">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		
+		<div class="container">
+			<h1 class="my-2"><i class="fa-solid fa-diamond"></i> Blackjack</h1>
+
+			<div class="card my-2">
+				<div class="card-body">
+					<div class="text-center my-4">
+						Please wait the online casino is still loading ...<br>
+						<small id="status">[refreshing in 5 seconds]</small>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			(() => {
+				let status = document.getElementById('status');
+				let wait = 5;
+				let refresh = function(firstrun) {
+					if (!firstrun) wait--;
+					status.textContent = '[refreshing in ' + wait + ' seconds]';
+					if (wait == 0) document.location.href = document.location.href;
+				}
+				setInterval(refresh, 1000);
+				refresh(true);
+			})();
+		</script>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/web3@1.7.5/dist/web3.min.js" integrity="sha384-g132Mel5Vo4bK8fotc1/Q+MuJxIeFZ+sUZ/kyb1/XMrVzQk+kNH2Sh2nSbMzjGpX" crossorigin="anonymous"></script>
+	</body>
+</html>

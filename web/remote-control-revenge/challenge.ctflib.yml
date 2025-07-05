@@ -1,0 +1,31 @@
+name: "Remote Control - Revenge"
+author: "[GramThanos](https://github.com/GramThanos)"
+category: web
+description: "We can now monitor our server securely. (the intended way)\n\n\nAuthor: GramThanos"
+
+value: 500
+type: docker-dynamic
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  docker_image: ctf/web:remote-control-revenge
+
+deploy:
+  docker_challenges: public/docker-challenge.tar
+
+flags:
+  - ECSC{I_gOt_mA_F1Rt_z3r0-d4y}
+
+topics:
+  - Zero Day
+
+tags:
+  - web
+  - hard
+
+files:
+  - public/web-remote-control-revenge.zip
+
+state: hidden
+version: "0.1"

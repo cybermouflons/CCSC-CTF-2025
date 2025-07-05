@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "php-serialize": "^5.1.3"
+  }
+}
