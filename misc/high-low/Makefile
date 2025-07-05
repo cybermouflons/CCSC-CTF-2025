@@ -1,15 +1,15 @@
 default: print
-	tar cvf public/docker-challenge.tar -C setup app Dockerfile run_game.sh
+	tar cvf public/docker-challenge.tar -C setup server Dockerfile run_game.sh
 	cd setup/app && zip -r - . --exclude='*flag*' > ../../public/misc-high-low.zip
 	@echo Challenge compiled.
 
 print:
-	@echo Current Flag: $$(cat setup/app/flag.txt)
+	@echo Current Flag: $$(cat setup/server/flag.txt)
 
 change: print changeflag clean default print
 
 changeflag:
-	$(shell bash -c 'read -p "New Flag: " flag; echo $$flag > setup/app/flag.txt')
+	$(shell bash -c 'read -p "New Flag: " flag; echo $$flag > setup/server/flag.txt')
 	@echo Flag changed.
 
 clean:

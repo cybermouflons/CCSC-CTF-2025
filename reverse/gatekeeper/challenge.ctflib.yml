@@ -1,0 +1,29 @@
+name: "Gatekeeper"
+author: "rok0s"
+category: reverse
+description: |
+  Think you're sharp enough to slip past every gate and claim the secrets they swore none could reach?
+
+  Important note: One of the endpoints below is the node RPC endpoint!
+
+value: 500
+type: docker-dynamic
+extra:
+  initial: 500
+  minimum: 100
+  decay: 25
+  docker_image: ctf/pwn:gatekeeper
+
+deploy:
+  docker_challenges: public/docker-challenge.tar
+
+flags:
+  - ECSC{Sm4rt_c0nTr4ct_r3veSs1Ng_f0R_4_cHaNg3_!_!_!}
+
+tags:
+  - reverse
+  - blockchain
+  - hard
+
+state: hidden
+version: "0.1"
