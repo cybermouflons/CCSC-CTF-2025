@@ -13,7 +13,7 @@ extra:
   compose_stack: !filecontents docker-compose.yml
 
 flags:
-  - ECSC{I_gOt_mA_F1Rt_z3r0-d4y}
+  - ECSC{n0w_I_r3AlLy_gOt_mA_F1Rt_z3r0-d4y!}
 
 topics:
   - Zero Day
