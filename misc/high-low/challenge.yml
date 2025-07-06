@@ -9,7 +9,7 @@ extra:
   initial: 500
   minimum: 100
   decay: 25
-  redirect_type: http
+  redirect_type: direct
   compose_stack: !filecontents docker-compose.yml
 
 flags:
