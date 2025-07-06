@@ -19,7 +19,11 @@ WORKDIR /home/ctf
 COPY entrypoint.sh checker.py rpc_proxy.py ./
 COPY ./gatekeeper-foundry ./gatekeeper-foundry
 
-RUN chmod +x entrypoint.sh checker.py rpc_proxy.py && \
+RUN rm -rf ./gatekeeper-foundry/broadcast && \
+    rm -rf ./gatekeeper-foundry/lib && \
+    rm -rf ./gatekeeper-foundry/cache && \
+    rm -rf ./gatekeeper-foundry/out && \
+    chmod +x entrypoint.sh checker.py rpc_proxy.py && \
     chown -R ctf:ctf /home/ctf
 
 USER ctf

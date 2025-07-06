@@ -19,6 +19,31 @@ deploy:
 
 flags:
   - ECSC{Sm4rt_c0nTr4ct_r3veSs1Ng_f0R_4_cHaNg3_!_!_!}
+  - {
+    type: "docker-environment-variable",
+    content: "FLAG",
+    data: "ECSC{Sm4rt_c0nTr4ct_r3veSs1Ng_f0R_4_cHaNg3_!_!_!}",
+  }
+  - {
+    type: "docker-environment-variable",
+    content: "RPC_PORT_INTERNAL",
+    data: "8545",
+  }
+  - {
+    type: "docker-environment-variable",
+    content: "RPC_PROXY_PORT",
+    data: "8544",
+  }
+  - {
+    type: "docker-environment-variable",
+    content: "CHECK_PORT",
+    data: "1337",
+  }
+  - {
+    type: "docker-environment-variable",
+    content: "CHAIN_ID",
+    data: "1337",
+  }
 
 tags:
   - reverse
