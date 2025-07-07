@@ -1,7 +1,7 @@
 # Writeup
 
 ### TL;DR;
-See here for a full solution script. It can be run like this `PROXY=<proxy_addr> PRIVATE_KEY=<private_key> forge script script/Solve.s.sol:Solve --broadcast --rpc-url http://<rpc_endpoint_host>:<port>-vvvv`
+See [here](../setup/gatekeeper-foundry/script/Solve.s.sol) for a full solution script. It can be run like this `PROXY=<proxy_addr> PRIVATE_KEY=<private_key> forge script script/Solve.s.sol:Solve --broadcast --rpc-url http://<rpc_endpoint_host>:<port>-vvvv`
 
 ---
 
