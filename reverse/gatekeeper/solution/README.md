@@ -77,6 +77,8 @@ With the bytecode at hand participants can use EVM reversing tools like Ghidra E
 heimdall decompile main.hex --include-yul  --include-sol
 ```
 
+Personally one of my favourite tools for debugging and interacting with EVM bytecode is this [EVM Playground](https://www.evm.codes/playground). You can just step through the code by pasting the bytecode and doing a test call with some mock calldata (e.g. `0x48c8949100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`). Note the `0x48c89491` function selector in the beginning which will dispatch execution to the function we are interested in.
+
 By reversing players must realise that the functions checks 4 conditions:
 1. The call is to the unlock function made by a contract
 2. The contract's address must end with `EC5C` (vanity address)
@@ -85,4 +87,4 @@ By reversing players must realise that the functions checks 4 conditions:
 
 If all of the above are true then the success flag is toggled to true and participants can request the flag from the interactive endpoint provided in the challenge by just typing `flag`
 
----
+Personally
