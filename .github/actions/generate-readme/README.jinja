@@ -7,6 +7,8 @@
 
 This is the official repository with the challenges published in Cyprus Cyber Security Challenge (CCSC) CTF 2025. Each challenge has a public, solution and setup folder (if applicable) and is accompanied with a short description. The setup folder contains all the files required to build and host the challenge and usually contains the flag and a proof of concept solution as well. The public folder contains the files that are released to the participant during the competition.
 
+This year, the competition is co-organised by Team Cyprus and Team Greece!
+
 **Flag format**: ECSC{this_is_a_flag}
 
 ## Dependencies
