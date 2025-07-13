@@ -83,7 +83,6 @@ The stack canary in (kernel space) of a process can be found in the `task_struct
 
 ```python
 [layer_name]> proc = gp(pid=1554)
-
 [layer_name]> hex(proc.stack_canary)
 Out[8]: '0xaf1673f117bf4600'
 ```
@@ -101,13 +100,9 @@ Similarly, we can read all the data of the `task_struct` and get the `sha1` hash
 
 ```python
 [layer_name]> proc = gp(pid=972)
-
 [layer_name]> data = kernel_layer.read(proc.vol.offset, proc.vol.size)
-
 [layer_name]> import hashlib
-
 [layer_name]> h = hashlib.sha1(data).hexdigest()
-
 [layer_name]> h
 Out[16]: '4ba1e2c98c299bd46567653eed574a1cf69409dc'
 ```
